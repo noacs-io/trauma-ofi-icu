@@ -18,9 +18,9 @@ Background
 ----------
 Trauma is a leading cause of mortality and morbidity worldwide. A cornerstone in developing the trauma quality improvement programs is multidisciplinary mortality and morbidity review to identify opportunities for improvement (OFI) in order to implement corrective actions. Many patients with severe trauma is admitted to the intensive care unit (ICU), but little is known about opportunities for improvement in this group of patients. The aim of this study is to characterise OFI in adult trauma patients admitted to the ICU and assess how patient factors are associated with OFI in these patients.
 
-Methods *redigera*
+Methods
 -------
-This was a registry-based study using all patients between 2014 and 2022 from the Karoliniska University Hospital in Solna who had been admitted to the ICU and who were reviewed regarding the presence of OFI by the mortality and morbidity conference. 
+This was a registry-based study using all patients between 2014 and 2022 from the Karoliniska University Hospital in Solna who had been admitted to the ICU and who were reviewed regarding the presence of OFI by the mortality and morbidity conference. Bi-variable and multivariable logistic regression was used to assess the following patient and process factors and OFI among this group of patients: ...
 
 Results
 -------
@@ -41,154 +41,6 @@ According to a study on the Korean trauma registry the primary cause of death af
 
 
 
-```{r}
-
-@ARTICLE{1,
-  title     = "Short-term versus long-term trauma mortality: A systematic
-               review",
-  author    = "Frydrych, Lynn M and Keeney-Bonthrone, Toby P and Gwinn,
-               Elizabeth and Wakam, Glenn K and Anderson, Maia S and Delano,
-               Matthew J",
-  journal   = "J. Trauma Acute Care Surg.",
-  publisher = "Ovid Technologies (Wolters Kluwer Health)",
-  volume    =  87,
-  number    =  4,
-  pages     = "990--997",
-  month     =  oct,
-  year      =  2019,
-  language  = "en"
-}
-
-#https://pubmed.ncbi.nlm.nih.gov/31589196/
-#Article on the evolution of long-term mortality in trauma patients as compared to the improved mortality numbers short-term
-
-
-@ARTICLE{2,
-  title    = "Identification of preventable trauma deaths: confounded
-              inquiries?",
-  author   = "Wilson, D S and McElligott, J and Fielding, L P",
-  abstract = "The published evaluation of methods for identifying preventable
-              trauma deaths contains many unstudied confounding factors. To
-              investigate the reliability of methods for identifying such
-              preventable deaths, we compared three consensus systems using
-              separate five-member general review panels assessing 20
-              non-central nervous system fatalities: panel A, independent
-              judgments; panel B, discussion of all cases preceding individual
-              judgments; and panel C, independent judgments followed by
-              discussion and equivocal case reassignment. The Kappa concordance
-              index was low for all methods (method A, 0.20; methods B and C,
-              0.40). Of the 11 deaths judged preventable by at least one panel,
-              only one death was judged preventable by all three panels.
-              Consensus agreement (four of five assessors) was 20\% for panel
-              A, 45\% for panel B, and 10\% for panel C (difference between
-              panels B and C, p less than 0.03). In panel C, discussion
-              affected the rate of equivocal case designation from 30\% to 5\%.
-              Thus different consensus methods yielded different results. We
-              conclude that individual case review can be severely flawed and
-              therefore should not be used to measure institutional quality of
-              patient care. We recommend that assessment of institutional
-              performance should be based on objective evaluation methods,
-              which require the study of patient population outcomes, rather
-              than on subjective methods in which individual cases are
-              reviewed.",
-  journal  = "J. Trauma",
-  volume   =  32,
-  number   =  1,
-  pages    = "45--51",
-  month    =  jan,
-  year     =  1992,
-  language = "en"
-}
-
-
-#https://journals.lww.com/jtrauma/abstract/1992/01000/identification_of_preventable_trauma_deaths_.10.aspx
-
-@ARTICLE{3,
-  title    = "Patient and process factors associated with opportunities for
-              improvement in trauma care: a registry-based study",
-  author   = "Albaaj, Hussein and Attergrim, Jonatan and Str{\"o}mmer, Lovisa
-              and Brattstr{\"o}m, Olof and Jacobsson, Martin and Wihlke,
-              Gunilla and V{\"a}sterbo, Liselott and Joneborg, Elias and Gerdin
-              W{\"a}rnberg, Martin",
-  abstract = "BACKGROUND: Trauma is one of the leading causes of morbidity and
-              mortality worldwide. Morbidity and mortality review of selected
-              patient cases is used to improve the quality of trauma care by
-              identifying opportunities for improvement (OFI). The aim of this
-              study was to assess how patient and process factors are
-              associated with OFI in trauma care. METHODS: We conducted a
-              registry-based study using all patients between 2017 and 2021
-              from the Karolinska University Hospital who had been reviewed
-              regarding the presence of OFI as defined by a morbidity and
-              mortality conference. We used bi- and multivariable logistic
-              regression to assess the associations between the following
-              patient and process factors and OFI: age, sex, respiratory rate,
-              systolic blood pressure, Glasgow Coma Scale (GCS), Injury
-              Severity Score (ISS), survival at 30 days, highest hospital care
-              level, arrival on working hours, arrival on weekends, intubation
-              status and time to first computed tomography (CT). RESULTS: OFI
-              was identified in 300 (5.8\%) out of 5182 patients. Age, missing
-              Glasgow Coma Scale, time to first CT, highest hospital care level
-              and ISS were statistically significantly associated with OFI.
-              CONCLUSION: Several patient and process factors were found to be
-              associated with OFI, indicating that patients with moderate to
-              severe trauma and those with delays to first CT are at the
-              highest odds of OFI.",
-  journal  = "Scand. J. Trauma Resusc. Emerg. Med.",
-  volume   =  31,
-  number   =  1,
-  pages    = "87",
-  month    =  nov,
-  year     =  2023,
-  keywords = "Acute surgery; Opportunities for improvement; Trauma; Trauma care",
-  language = "en"
-}
-
-#Tidigare publicerad artikel av NOACs
-#Albaaj, H. et al. Patient and process factors associated with opportunities for improvement in trauma care: a registry based study. Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine (2023) 31:87.https://doi.org/10.1186/s13049-023-01157-y.
-
-
-@ARTICLE{4,
-  title    = "National assessment of opportunities for improvement in
-              preventable trauma deaths: A mixed-methods study",
-  author   = "Kwon, Junsik and Lee, Myeonggyun and Jung, Kyoungwon",
-  abstract = "Trauma is a significant public health issue worldwide,
-              particularly affecting economically active age groups. Quality
-              management of trauma care at the national level is crucial to
-              improve outcomes of major trauma. In Korea, a biennial nationwide
-              survey on preventable trauma death rate is conducted. Based on
-              the survey results, we analyzed opportunities for improving the
-              trauma treatment process. Expert panels reviewed records of 8282
-              and 8482 trauma-related deaths in 2017 and 2019, respectively,
-              identifying 258 and 160 cases in each year as preventable deaths.
-              Opportunities for improvement were categorized into prehospital,
-              interhospital, and hospital stages. Hemorrhage was the primary
-              cause of death, followed by sepsis/multiorgan failure and central
-              nervous system injury. Delayed hemostatic procedures and
-              transfusions were common areas for improvement in hospital stage.
-              Interhospital transfers experienced significant delays in arrival
-              time. This study emphasizes the need to enhance trauma care by
-              refining treatment techniques, centralizing patients in
-              specialized facilities, and implementing comprehensive reviews
-              and performance improvements throughout the patient transfer
-              system. The findings offer valuable insights for addressing
-              trauma care improvement from both clinical and systemic
-              perspectives.",
-  journal  = "Healthcare (Basel)",
-  volume   =  11,
-  number   =  16,
-  month    =  aug,
-  year     =  2023,
-  keywords = "mortality; patient transfer; quality improvement; treatment
-              outcome; wounds and injuries",
-  language = "en"
-}
-
-
-#https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454732/pdf/healthcare-11-02291.pdf
-
-```
-
-
 
 Methods 
 =======
@@ -196,33 +48,13 @@ Study design
 ------------
 We conducted single-centre registry-based retrospective cohort study using data from the trauma registry and trauma care quality database at Karolinska University Hospital in Solna. The trauma care quality database is a subset of the trauma registry and includes about 6000 patients selected for review between 2014 and 2022. The outcome of the selected patients was OFI identified by the multidisciplinary review board and then recorded in the trauma care quality database. From 2017 the trauma care quality database includes all patients in the trauma registry as well as the results of the mortality and morbidity review. This project will use these two databases and assess what types of OFI occurred in ICU patients and how different patient factors; such as age, sex, mechanism of injury and injury severity, are associated with OFI using logistic regression. A 5% significance level and 95% confidence levels will be used.
 
-
 Setting
 -------
-The Karolinska University Hospital in Solna is a level 1 trauma centre based on the definition by the American College of Surgeons (ACS) Committee on Trauma [5], which means that all patients in Stockholm with severe or suspected severe trauma are sent there. The hospital has direct access to radiology, surgery, intensive care and consultants from relevant specialities [6]. All patients are included in a mortality and morbidity screening combining individual review and specific audit filters by specialized nurses. The patients who are identified as having higher probability for OFI are discussed in a multidisciplinary conference held every 6-8 weeks. Examples of OFI include the need for better organization or more senior members taking part in the trauma care. The presence or absence of OFI is decided among the participants of the conference and then recorded in the trauma care quality database. 
-
-
-```{r}
-
-@ARTICLE{5,
-  title    = "Trauma center levels defined",
-  author   = "Trauma Center Association of America",
-  URL  = "https://www.traumacenters.org/page/TraumaCenterLevels#Goals",
-  year     =  2014,
-#Hur källhänvisar man webbsida?
- 
-@ARTICLE{6,
-  title    = "Traumamanual",
-  author   = "Karolinska Universitetssjukhuset Solna",
-  year     =  2020,
-#Include ISS? And audit filters?
-
-```
+The Karolinska University Hospital in Solna is a level 1 trauma centre based on the definition by the American College of Surgeons (ACS) Committee on Trauma [5], which means that all patients in Stockholm with severe or suspected severe trauma are sent there. The hospital has direct access to radiology, surgery, emergency medicine, intensive care and consultants from relevant specialities [6]. All patients are included in a mortality and morbidity screening combining individual review and specific audit filters by specialized nurses. The patients who are identified as having higher probability for OFI are discussed in a multidisciplinary conference held every 6-8 weeks. Examples of OFI include the need for better organization or more senior members taking part in the trauma care. The presence or absence of OFI is decided among the participants of the conference and then recorded in the trauma care quality database. 
 
 Participants
 ------------
-The trauma registry includes all patients admitted with trauma team activation, regardless of Injury Severity Score (ISS), as well as patients admitted without trauma team activation but found to have an ISS of more than 9. We included all patients who had been included in the morbidity and mortality screening process between January 1, 2014 and *June 1, 2022*. *We excluded patients who were younger than 15 years and patients who were dead on arrival.*
-
+The trauma registry includes all patients admitted with trauma team activation, regardless of Injury Severity Score (ISS), as well as patients admitted without trauma team activation but found to have an ISS of more than 9. We included all patients who had been included in the morbidity and mortality screening process between January 1, 2014 and *June 1, 2022 (?)* and who were also admitted to the ICU. *We excluded patients who were younger than 15 years and patients who were dead on arrival.*
 
 Variables and data sources/measurements
 ---------------------------------------
@@ -230,18 +62,7 @@ Study outcome
 The study outcome will be on the presence of OFI in adult patients treated in the ICU focusing on different types of opportunities for improvement including delayed treatment, judgement error and technical errors. *vilka OFIs ska läggas till för att analyseras?*
 
 Patient and process factors 
-The factors were chosen from the trauma registry, based on the locally used audit filters, *standard epidemiological factors* and factors registered in the Swedish National Trauma Registry. The categorical factors were *sex, survival after 30 days, Glasgow Coma Scale (GCS), respiratory rate, systolic blood pressure, working hours, weekend, time from arrival at the hospital until first computed tomography (CT) and if the patient was intubated*. The continuous factors age and Injury Severity Score (ISS) were also included. Working hours was defined as between 8.00 a.m. and 5 p.m., or during a weekend, defined as Saturday or Sunday.
-
-Statistical analysis 
-Odds ratios (OR) with associated 95% confidence intervals was used with a 5% significance level. The programming language used was R for all analyses []. The statistical analysis was first conducted on synthetic data and later implemented on the data collected from the trauma registry and the trauma care quality database. 
-
-*lägg till?*
-A complete case analysis was conducted after handling missing values in systolic blood pressure, respiratory rate, and GCS score as described above. We present sample characteristics using descriptive statistics. Bivariable logistic regression was used to determine unadjusted associations and multivariable logistic regression to determine adjusted associations between patient and process factors and OFI. 
-
-```{r}
-# LÄNKA till http://www.rstudio.com/ 
-```
-
+The factors were chosen from the trauma registry, based on the locally used audit filters ?, *standard epidemiological factors* and factors registered in the Swedish National Trauma Registry. The categorical factors were *sex, survival after 30 days, Glasgow Coma Scale (GCS), respiratory rate, systolic blood pressure, working hours, weekend, time from arrival at the hospital until first computed tomography (CT) and if the patient was intubated*. The continuous factors age and Injury Severity Score (ISS) were also included. Working hours was defined as between 8.00 a.m. and 5 p.m., or during a weekend, defined as Saturday or Sunday.
 
 Bias 
 ----
@@ -265,7 +86,11 @@ analyses. If applicable, describe which groupings were chosen and why
 
 Statistical methods
 -------------------
-*senare*
+Odds ratios (OR) with associated 95% confidence intervals was used with a 5% significance level. The programming language used was R for all analyses [länk]. The statistical analysis was first conducted on synthetic data and later implemented on the data collected from the trauma registry and the trauma care quality database. 
+
+*lägg till?*
+A complete case analysis was conducted after handling missing values in systolic blood pressure, respiratory rate, and GCS score as described above. We present sample characteristics using descriptive statistics. Bivariable logistic regression was used to determine unadjusted associations and multivariable logistic regression to determine adjusted associations between patient and process factors and OFI. 
+
 
 <!-- 
 
@@ -280,7 +105,6 @@ for confounding
 
 (e) Describe any sensitivity analyses
 -->
-
 
 
 
