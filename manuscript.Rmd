@@ -10,13 +10,12 @@ csl: vancouver.csl
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-
 Abstract
 ========
+
 Background
 ----------
-Trauma is a leading cause of mortality and morbidity worldwide. A cornerstone in developing the trauma quality improvement programs is multidisciplinary mortality and morbidity review to identify opportunities for improvement (OFI) in order to implement corrective actions. Many patients with severe trauma is admitted to the intensive care unit (ICU), but little is known about opportunities for improvement in this group of patients. The aim of this study is to characterise OFI in adult trauma patients admitted to the ICU and assess how patient factors are associated with OFI in these patients.
+Trauma is a leading cause of mortality and morbidity worldwide. A cornerstone in developing the trauma quality improvement programs is multidisciplinary mortality and morbidity review to identify opportunities for improvement (OFI) in order to implement corrective actions.<!-- This sentence is a bit long, try to break it into two, or use active voice: Multidisciplinary mortality and morbidity review is a ... --> Many patients with severe trauma is admitted to the intensive care unit (ICU), but little is known about opportunities for improvement in this group of patients. The aim of this study is to characterise OFI in adult trauma patients admitted to the ICU and assess how patient factors are associated with OFI in these patients.
 
 Methods
 -------
@@ -33,24 +32,24 @@ Conclusion
 
 Introduction
 ============
-Trauma is a leading cause of mortality and morbidity worldwide being the leading cause of death among people under 44 years old in the United States and the fourth leading cause of death in the elderly [1]. A cornerstone in developing the trauma quality improvement programs is multidisciplinary mortality and morbidity review to identify opportunities for improvement (OFI) in order to implement corrective actions. Identifying OFIs will provide guidance as to what to focus specific efforts on and is a way to assess trauma patient cases in a more objective manner rather than only subjective methods where individual cases are reviewed [2]. Examples of opportunities for improvement include lack of resources and management errors. 
+
+<!-- The structure is generally good. I would add some more global data to the beginning, and then try to refer to more studies on potential opportunities for improvement and how they can be addressed. Try searching for preventable deaths in trauma patients treated in the ICU as well -->
+
+Trauma is a leading cause of mortality and morbidity worldwide, and the leading cause of death among people under 44 years old in the United States and the fourth leading cause of death in the elderly<!-- Also in the US? I suggest you cite the latest Global Burden of Disease figures, see https://www.thelancet.com/pb-assets/Lancet/gbd/summaries/diseases/injuries.pdf--> [@Frydrych2019]<!-- Use more descriptive keys in bibliography.bib and use them like in this example, i.e. within square brackets and preceded by a @-->. A cornerstone in developing the trauma quality improvement programs is multidisciplinary mortality and morbidity review to identify opportunities for improvement (OFI) in order to implement corrective actions. OFIs provide guidance as to what to focus specific efforts on and is a way to assess trauma patient cases in a more objective manner rather than only subjective methods where individual cases are reviewed [2]. Examples of opportunities for improvement include lack of resources and management errors. 
 
 Albaaj et al. recently analyzed OFI in relation to different patient and process factors based on data from the trauma registry of Karolinska Institutet Solna. The study indicated that patients with moderate to severe trauma are at the highest odds of OFI [3]. Many patients with severe trauma are admitted to the intensive care unit (ICU), but little is known about opportunities for improvement in this group of patients. 
 
-According to a study on the Korean trauma registry the primary cause of death after trauma was haemorrhage, followed by sepsis/multiorgan failure and central nervous system injury. Delayed hemostatic procedures and transfusions were common areas for improvement in the hospital stage [4]. These are examples of factors that could be important in care on a higher hospital level such as the ICU. The aim of this study is to characterise OFI in adult trauma patients admitted to the ICU and assess how patient factors are associated with OFI in these patients.
-
-
-
+According to a study on the Korean trauma registry the primary cause of death after trauma was haemorrhage, followed by sepsis/multiorgan failure and central nervous system injury<!-- There are many studies on preventable deaths in trauma patients, so that's a good key word to search for -->. Delayed hemostatic procedures and transfusions were common areas for improvement in the hospital stage [4]. These are examples of factors that could be important in care on a higher hospital level such as the ICU. The aim of this study is to characterise OFI in adult trauma patients admitted to the ICU and assess how patient factors are associated with OFI in these patients.
 
 Methods 
 =======
 Study design
 ------------
-We conducted single-centre registry-based retrospective cohort study using data from the trauma registry and trauma care quality database at Karolinska University Hospital in Solna. The trauma care quality database is a subset of the trauma registry and includes about 6000 patients selected for review between 2014 and 2022. The outcome of the selected patients was OFI identified by the multidisciplinary review board and then recorded in the trauma care quality database. From 2017 the trauma care quality database includes all patients in the trauma registry as well as the results of the mortality and morbidity review. This project will use these two databases and assess what types of OFI occurred in ICU patients and how different patient factors; such as age, sex, mechanism of injury and injury severity, are associated with OFI using logistic regression. A 5% significance level and 95% confidence levels will be used.
+We conducted single-centre registry-based retrospective cohort study using data from the trauma registry and trauma care quality database at Karolinska University Hospital in Solna. <!-- This can be removed as it should be covered in other sections: The trauma care quality database is a subset of the trauma registry and includes about 8000 patients selected for review between 2014 and 2022. The outcome of the selected patients was OFI identified by the multidisciplinary review board and then recorded in the trauma care quality database. From 2017 the trauma care quality database includes all patients in the trauma registry as well as the results of the mortality and morbidity review. This project will use these two databases and assess what types of OFI occurred in ICU patients and how different patient factors; such as age, sex, mechanism of injury and injury severity, are associated with OFI using logistic regression. A 5% significance level and 95% confidence levels will be used. -->
 
 Setting
 -------
-The Karolinska University Hospital in Solna is a level 1 trauma centre based on the definition by the American College of Surgeons (ACS) Committee on Trauma [5], which means that all patients in Stockholm with severe or suspected severe trauma are sent there. The hospital has direct access to radiology, surgery, emergency medicine, intensive care and consultants from relevant specialities [6]. All patients are included in a mortality and morbidity screening combining individual review and specific audit filters by specialized nurses. The patients who are identified as having higher probability for OFI are discussed in a multidisciplinary conference held every 6-8 weeks. Examples of OFI include the need for better organization or more senior members taking part in the trauma care. The presence or absence of OFI is decided among the participants of the conference and then recorded in the trauma care quality database. 
+The Karolinska University Hospital in Solna is a level 1 trauma centre based on the definition by the American College of Surgeons (ACS) Committee on Trauma [5], and is designated to receive all patients in Stockholm with major or suspected major trauma. The hospital has direct access to radiology, surgery, emergency medicine, intensive care and consultants from relevant specialities [6]. All patients are included in a mortality and morbidity screening combining individual review and specific audit filters by specialized nurses. The patients who are identified as having higher probability for OFI are discussed in a multidisciplinary conference held every 6-8 weeks. Examples of OFI include the need for better organization or more senior members taking part in the trauma care. The presence or absence of OFI is decided among the participants of the conference and then recorded in the trauma care quality database. 
 
 Participants
 ------------
@@ -58,10 +57,13 @@ The trauma registry includes all patients admitted with trauma team activation, 
 
 Variables and data sources/measurements
 ---------------------------------------
-Study outcome
-The study outcome will be on the presence of OFI in adult patients treated in the ICU focusing on different types of opportunities for improvement including delayed treatment, judgement error and technical errors. *vilka OFIs ska läggas till för att analyseras?*
 
-Patient and process factors 
+### Study outcome
+
+The study outcome will be on the presence of OFI in adult patients treated in the ICU focusing on different types of opportunities for improvement including delayed treatment, judgement error and technical errors. *vilka OFIs ska läggas till för att analyseras?*<!-- You can keep it like this for now -->
+
+### Patient and process factors 
+
 The factors were chosen from the trauma registry, based on the locally used audit filters ?, *standard epidemiological factors* and factors registered in the Swedish National Trauma Registry. The categorical factors were *sex, survival after 30 days, Glasgow Coma Scale (GCS), respiratory rate, systolic blood pressure, working hours, weekend, time from arrival at the hospital until first computed tomography (CT) and if the patient was intubated*. The continuous factors age and Injury Severity Score (ISS) were also included. Working hours was defined as between 8.00 a.m. and 5 p.m., or during a weekend, defined as Saturday or Sunday.
 
 Bias 
@@ -72,6 +74,9 @@ Bias
 
 Study size 
 ----------
+
+<!-- Read up on the sample size requirements of logistic regression. You will come across for example the 10 events per variable rule, which is sometimes used as a rule of thumb to decide the size of the model in comparison to available data. You can also read up on the concept of power. -->
+
 *senare*
 
 <!-- Explain how the study size was arrived at -->
@@ -80,16 +85,15 @@ Quantitative variables
 ----------------------
 *senare*
 
+<!-- Age, ISS, time from arrival to CT, systolic blood pressure, respiratory rate and GCS score can all be considered quantitative variables. Describe how they were handled in the analyses. -->
+
 <!-- Explain how quantitative variables were handled in the
 analyses. If applicable, describe which groupings were chosen and why
 -->
 
 Statistical methods
 -------------------
-Odds ratios (OR) with associated 95% confidence intervals was used with a 5% significance level. The programming language used was R for all analyses [länk]. The statistical analysis was first conducted on synthetic data and later implemented on the data collected from the trauma registry and the trauma care quality database. 
-
-*lägg till?*
-A complete case analysis was conducted after handling missing values in systolic blood pressure, respiratory rate, and GCS score as described above. We present sample characteristics using descriptive statistics. Bivariable logistic regression was used to determine unadjusted associations and multivariable logistic regression to determine adjusted associations between patient and process factors and OFI. 
+We used R for all statistical analyses [länk]. A complete case analysis was conducted after handling missing values in systolic blood pressure, respiratory rate, and GCS score as described above. We present sample characteristics using descriptive statistics. The statistical analysis was first conducted on synthetic data and later implemented on the data collected from the trauma registry and the trauma care quality database <!-- This can be moved to the bias section -->. <!-- This is where you write about the logistic regression --> Odds ratios (OR) with associated 95% confidence intervals was used with a 5% significance level. 
 
 
 <!-- 
