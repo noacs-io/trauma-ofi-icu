@@ -43,4 +43,3 @@ merged.data$ofi <- create_ofi(merged.data)
 ## them). They all need to be sourced however when you compile your
 ## manuscript file or run this file as a job, as that happens in a
 ## clean R session.
-
