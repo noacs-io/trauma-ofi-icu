@@ -1,156 +1,433 @@
 ---
-title: "Manuscript title here"
+title: "Opportunities for improvement in adult trauma patients admitted to the intensive care unit: A registry-based study"
 output: html_document
-author: "Your name here"
+author: "Elin Sun Cao"
 bibliography: bibliography.bib
 csl: vancouver.csl
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Abstract
 
-<!-- This is an R Markdown document. Markdown is a simple formatting
-syntax for authoring HTML, PDF, and MS Word documents. For more
-details on using R Markdown see http://rmarkdown.rstudio.com -->
+## Background
 
-<!-- This is a comment and will not be present in the compiled
-document. Try "knitting" this document by clicking the knit button up
-to the left, or by running `rmarkdown::render("manuscript.Rmd")` in
-the console and you should only see headings -->
+Trauma is a leading cause of mortality and morbidity worldwide. A
+cornerstone in developing the trauma quality improvement programs is
+multidisciplinary mortality and morbidity review. The purpose of these
+is to identify opportunities for improvement (OFI), which are necessary
+in order to implement corrective actions. Many patients with severe
+trauma are admitted to the intensive care unit (ICU), but little is
+known about opportunities for improvement in this group of patients. The
+aim of this study is to characterise OFI in adult trauma patients
+admitted to the ICU and assess how patient factors are associated with
+OFI in these patients.
 
-<!-- Structure and most comments are from the Strengthening the
-reporting of observational studies in epidemiology (STROBE) statement,
-see https://www.strobe-statement.org/. For more explanations see the
-paper Strengthening the Reporting of Observational Studies in
-Epidemiology (STROBE):explanation and elaboration.  -->
+## Methods
 
-<!-- Indicate the study’s design with a commonly used term in the
-title, for example: "Associations between resuscitation interventions
-and opportunities for improvement in adult trauma patients: A cohort
-study" -->
+This was a registry-based study using all patients between 2014 and 2022
+from the Karolinska University Hospital in Solna who had been admitted
+to the ICU and who were reviewed regarding the presence of OFI by the
+mortality and morbidity conference. Bi-variable and multivariable
+logistic regression was used to assess the following patient and process
+factors and OFI among this group of patients: gender, age, survival
+after 30 days, Glasgow Coma Scale (GCS), respiratory rate, systolic
+blood pressure, working hours, weekend, time from arrival at the
+hospital until first computed tomography (CT), if the patient was
+intubated and Injury Severity Score (ISS).
 
-Abstract
-========
+## Results
 
-<!-- Provide in the abstract an informative and balanced summary of
-what was done and what was found. Not more than 300 words. -->
+## Conclusion
 
-Background
-----------
+# Abbreviations
 
-Methods
--------
+CT = computed tomography
 
-Results
--------
+GCS = Glasgow Coma Scale
 
-Conclusion
-----------
+GOS = Glasgow Outcome Score
 
-Introduction
-============
+ISS = Injury Severity Score
 
-<!-- Explain the scientific background and rationale for the
-investigation being reported. End by stating the aim or specific
-objectives, including any prespecified hypotheses. The introduction
-should not be longer than 1-1.5 pages, typically 4-5 paragraphs, each
-6-8 lines long. Support every statement with a citation -->
+NISS = New Injury Severity Score
 
-You can cite document here like this [@exampleKey9999]. Open the file
-bibliography.bib to learn more.
+OFI = Opportunity For Improvement
 
-Methods 
-=======
+RTS = Revised Trauma Score
 
-Study design
-------------
+TRISS = Trauma and Injury Severity Score
 
-<!-- Present key elements of study design -->
+# Introduction
 
-Setting
--------
+Trauma --- the clinical entity of injury and the body's associated
+response --- is a leading cause of mortality and morbidity worldwide.
+According to WHO, injury-related deaths constitute 4% of all deaths and
+take the lives of 4,4 million people yearly worldwide - more than
+HIV/AIDS, malaria, maternal mortality and tuberculosis combined. The top
+3 of 5 causes of death in people aged 5-29 are injury-related; road
+traffic injuries, homicide and suicide. Each year, tens of millions of
+people suffer non-fatal injuries leading to treatment at hospitals in
+emergency departments and acute care visits. These injuries often lead
+to temporary or permanent disability and the need for medical and mental
+rehabilitation. Trauma exposure at a young age increases the risk for
+mental illness and suicide leading to increased risk of an unhealthy
+lifestyle associated with smoking, alcohol and substance abuse, chronic
+disease and cancer as well as societal problems such as crime, poverty
+and violence. The burden of disease from injuries vary depending on
+certain conditions; socioeconomic factors, gender, age and country. Men
+suffer from injuries more often than women. Across all age groups
+worldwide, the top three leading causes of injury among males are road
+traffic injuries, homicide and suicide; whereas the top three leading
+causes of injury among women are road traffic injuries, falls and
+suicide [@1,@2].
 
-<!-- Describe the setting, locations, and relevant dates, including
-periods of recruitment, exposure, follow-up, and data collection -->
+According to the annual report from the Swedish Trauma registry
+(SweTrau) 2022, trauma was more common among men than women in Sweden
+--- 65,3% men compared to 34,7% women. The most affected age group was
+the working population. The leading causes of trauma included; road
+traffic injuries, falls, weapons and stabs and blows. Previous years,
+road traffic injuries have been the leading cause of injury. However,
+since 2022 road traffic injuries and falls account for about the same
+proportion of mechanisms of injury. There are several variables that can
+be studied to assess primary patient care, for example time to first CT
+and acute interventions. Median time to first CT at the university
+hospitals of Sweden was 30 minutes in unconscious patients with GCS \<
+9. Acute interventions is defined as interventions performed immediately
+or within 24 hours after arrival to a hospital. The most common acute
+interventions in Swedish hospitals were: thoracic drains, wound
+revisions and fracture surgery followed by laparotomy with haemostasis,
+radiological interventions such as embolisation and stents, and
+thoracotomy [@3].
 
-Participants
-------------
+Albaaj et al. recently analyzed opportunities for improvement (OFI) in
+relation to different patient and process factors based on data from the
+Swedish trauma registry and data from the Karolinska University Hospital
+in Solna. The study indicated that patients with moderate to severe
+trauma are at the highest odds of OFI [@4]. According to SweTrau 2022
+41,1% of patients with New Injury Severity Score (NISS) \> 15 who were
+at a university hospital were admitted to the ICU. The proportion of
+severely injured admitted to the ICU has decreased in recent years,
+however; patients with NISS \> 15 still constitute a large proportion of
+the trauma patients treated in the ICU. A way to measure functional
+level after hospital discharge is Glasgow Outcome Scale (GOS). According
+to GOS, among patients with NISS \> 15 17% were deceased, 20% suffered
+severe disability, 49% suffered moderate disability and 14% had good
+recovery in the university hospitals of Sweden [@3].
 
-<!-- Cohort study: Give the eligibility criteria, and the sources and
-methods of selection of participants. Describe methods of
-follow-up. For matched studies, give matching criteria and number of
-exposed and unexposed -->
+For all injuries, quality hospital care can reduce the amount of short-
+and long-term disability. Therefore, improving planning, access and
+organisation of trauma care systems including pre-hospital care,
+interhospital transportation, telecommunication and in-hospital care all
+play a central role in reducing overall impact after trauma [@1].
+Disability-adjusted life-years (DALYs) is a way to measure
+post-discharge quality of life. Trauma accounts for one-tenth of DALYs,
+most of the burden in low- and middle-income countries (LMIC) [@5, @6].
+Trauma costs approximately 3% of gross domestic product (GDP) yearly
+globally, as it mostly affects the working population [@7].
 
-<!-- Case-control study: Give the eligibility criteria, and the
-sources and + methods of case ascertainment and control
-selection. Give the rationale for the choice of cases and
-controls. For matched studies, give matching criteria and the number
-of controls per case -->
+## Trauma quality improvement programs
 
-<!-- Cross-sectional study: Give the eligibility criteria, and the
-sources and methods of selection of participants -->
+Many initiatives for quality improvement programs have been seen in
+trauma and critical care based on the paradigm of Donabedian [@8],
+stating that implementing proven structures and processes of care is the
+most effective way to improve outcomes. One example of a structure and
+process intervention in the intensive care unit is highly-staffed ICUs
+that has been associated with improved outcomes, as well as bundles to
+recognize and treat common conditions such as those for treating sepsis
+and ventilator-associated pneumonia [@9]. The intention of quality
+improvement is objective improvement in regard to preventability. A
+cornerstone in developing the trauma quality improvement programs is
+therefore multidisciplinary mortality and morbidity review. The purpose
+of these is to discuss preventable deaths and identifying OFIs in trauma
+care regarding structure as well as clinical processes. This way,
+identifying OFIs will provide guidance as to what to focus specific
+efforts on. There are several other methods to improve trauma care.
+However, mortality and morbidity review has been shown to be a key
+method of addressing all necessary components of trauma improvement
+[@10].
 
-Variables and data sources/measurements
----------------------------------------
+Trauma audit filters are descriptions of specific actions that should be
+taken, time frames in which tests or treatments should be provided, or
+outcomes that are expected to occur in injured patients. Assessing
+patients whose care falls outside the frames of these audit filters and
+providing feedback to the clinicians involved in the patient's care
+provides means of correcting errors and improving future trauma care.
+The audit filters were introduced by the American College of Surgeons
+1995; however, they have been criticized as they may not be directly
+linked to meaningful clinical or patient-centered outcomes [@11]. At the
+Karolinska University Hospital in Solna local audit filters are used,
+shown in Table 1. These local audit filters include: systolic blood
+pressure under 90, GCS \< 9 and not intubated, ISS \> 15 but not
+admitted to the ICU, ISS \> 15 and no trauma team activation, no
+anticoagulation treatment within 72 h after traumatic brain injury, time
+to acute intervention more than 60 minutes, time to CT more than 30
+minutes, liver or spleen injury, cardiopulmonary resuscitation with
+thoracotomy, massive transfusion and death within 30 days after trauma.
 
-<!-- Clearly define all outcomes, exposures, predictors, potential
-confounders, and effect modifiers. Give diagnostic criteria, if
-applicable. For each variable of interest, give sources of data and
-details of methods of assessment (measurement). Describe comparability
-of assessment methods if there is more than one group -->
+## Injury score systems
 
-Bias 
-----
+When a patient first arrives at the hospital, injury score systems are
+used to assess how urgent the need of interventions to a patient is.
+There are several injury score systems: Injury Severity Score (ISS), New
+Injury Severity Score (NISS), Revised Trauma Score (RTS) and Trauma and
+Injury Severity Score (TRISS).
 
-<!-- Describe any efforts to address potential sources of bias -->
+ISS is an anatomical scoring system providing an overall score for
+patients with multiple injuries. Each injury is assigned an abbreviated
+injury scale (AIS) score and is allocated to one of six body regions.
+The three most severely injured body regions have their scores squared
+and added together to produce an ISS score between 0 and 75. If an
+injury is assigned an AIS of 6 the ISS score is automatically assigned
+to 75. Major trauma is considered when ISS \> 15. The major drawback of
+ISS is that it only considers one injury for each body region.
+Therefore, if several severe injuries are in the same body region, they
+are not accounted for. NISS counters the problem of ISS being the sum of
+the squares of the three most severe injuries, regardless of body region
+injured. NISS is therefore equal to or higher than ISS.
 
-Study size 
-----------
+RTS is a physiological scoring system scored from the data obtained in
+the first set of data obtained on the patient and consists of Glasgow
+Coma Scale (GCS), respiratory rate and systolic blood pressure. RTS is
+heavily weighted towards GCS compared to respiratory rate and systolic
+blood pressure. It has been demonstrated to show accuracy at predicting
+death.
 
-<!-- Explain how the study size was arrived at -->
+TRISS has a maximum prediction in outcome when compared with the other
+scores. The score determines the probability of survival based on a
+formula consisting of ISS, RTS and the patient's age. TRISS is therefore
+both an anatomical and physiological scoring system [@12].
 
-Quantitative variables
-----------------------
+## Preventable deaths in patients admitted to the ICU
 
-<!-- Explain how quantitative variables were handled in the
-analyses. If applicable, describe which groupings were chosen and why
--->
+There are many studies on preventable deaths in trauma patients treated
+in the ICU both regarding the medical aspect as well as the human
+aspect. According to a study from Japan on the medical aspect, the
+primary medical causes of death after trauma are haemorrhage,
+sepsis/multiorgan failure and central nervous system injury. Delayed
+hemostatic procedures and transfusions were common areas for improvement
+in the hospital stage [@13]. The most prominent OFI in regard to
+haemorrhage was decision-making compared to errors in technical skill.
+The OFIs frequently involved the decision between radiology, surgery and
+further investigation [@14].
 
-Statistical methods
--------------------
+A study from The University of Pennsylvania looked at the human aspect
+of OFIs in the ICU. The ICU of this hospital uses telemedicine and
+telemonitoring to review critical patient events. The areas of
+improvement they identified were: team dynamics and communication, use
+of best practices, increased and standardized access to emergency
+resources and improvement of procedural technique. They recommend other
+ICUs with telemedicine capacity to adopt a similar strategy in order to
+present OFIs and educational discussions [@15]. Another study looked at
+how critical information was handled in the ICU and found that
+laboratory values and test results were the most frequently lost items.
+This points at the importance of communication and handling of critical
+information at handoffs of care [@16].
 
-<!-- 
+Preventability in studies is often defined as an event that would not
+have occurred had the patient received ordinary standards of care.
+Evaluating preventable deaths in patients admitted to the ICU can be a
+challenge as the patients have extensive medical history and it is
+harder to understand what the standard of care is for those patients.
+Furthermore, even though these patients receive the best of care, these
+patients still have a higher risk of developing complications or dying.
+Some might even be in such a bad condition that they die just when they
+have been admitted to the ICU from the ward or emergency care [@9].
 
-(a) Describe all statistical methods, including those used to control
-for confounding
+Many patients with severe trauma are admitted to the intensive care unit
+(ICU), but little is known about opportunities for improvement in this
+group of patients. This being due to the patients admitted to the ICU
+being more complex. Identifying OFIs in this group can therefore be more
+of a challenge. There are existing studies on different aspects of
+trauma care improvement, but studies focusing mainly on OFI in the ICU
+are few.
 
-(b) Describe any methods used to examine subgroups and interactions
+## Aim
 
-(c) Explain how missing data were addressed 
+The aim of this study is to characterise OFI in adult trauma patients
+admitted to the ICU and assess how patient factors are associated with
+OFI in these patients.
 
-(d) 
+# Methods
 
-Cohort study: If applicable, explain how loss to follow-up was addressed 
+## Study design
 
-Case-control study:If applicable, explain how matching of cases and
-controls was addressed
+We conducted a retrospective single-centre cohort study based on data
+from the Karolinska University Hospital in Solna and from the Swedish
+Trauma registry. We used R for all statistical analyses [@19]. A
+complete case analysis was conducted after handling missing values in
+systolic blood pressure, respiratory rate and GCS score. We present
+sample characteristics using descriptive statistics.
 
-Cross-sectional study: If applicable, describe analytical methods
-taking account of sampling strategy
+## Setting
 
-(e) Describe any sensitivity analyses
--->
+The Karolinska University Hospital in Solna is a level 1 trauma centre
+based on the definition by the American College of Surgeons (ACS)
+Committee on Trauma [@17], which means that all patients in Stockholm
+with severe or suspected severe trauma are sent there. The hospital has
+direct access to radiology, surgery, emergency medicine, intensive care
+and consultants from relevant specialities [@18]. All patients are
+included in a mortality and morbidity screening combining individual
+review and specific audit filters by specialized nurses. The patients
+who are identified as having higher probability for OFI are discussed in
+a multidisciplinary conference held every 6-8 weeks. Examples of OFI
+include the need for better organization or more senior members taking
+part in the trauma care. The presence or absence of OFI is decided among
+the participants of the conference and then recorded in the trauma care
+quality database.
 
-Results
-=======
+## Participants
 
-<!-- 
+The trauma registry includes all patients admitted with trauma team
+activation, regardless of Injury Severity Score (ISS), as well as
+patients admitted without trauma team activation but found to have an
+ISS of more than 9. We included all patients who had been included in
+the morbidity and mortality screening process between January 1, 2014
+and June 1, 2022 and who were also admitted to the ICU. We excluded
+patients who were younger than 15 years and patients who were dead on
+arrival.
 
-Participants
-------------
+## Variables and data sources/measurements
 
-(a) Report numbers of individuals at each stage of study—eg numbers
+### Study outcome
+
+The study outcome will be on the presence of OFI in adult patients
+treated in the ICU based on patient and process factors.
+
+### Patient and process factors
+
+The quantitative variables were factors chosen from the trauma registry,
+based on the locally used audit filters, standard epidemiological
+factors and factors registered in the Swedish Trauma Registry. The
+categorical factors were sex, survival after 30 days, GCS, respiratory
+rate, systolic blood pressure, working hours, weekend, time from arrival
+at the hospital until first CT, if the patient was intubated, age and
+Injury Severity Score (ISS). Working hours was defined as between 8.00
+a.m. and 5 p.m., or during a weekend, defined as Saturday or Sunday.
+
+## Study size
+
+There were ... patients in the trauma registry. ... with trauma team
+activation regardless of ISS score, ... patients admitted without trauma
+team activation but with ISS score \> 9. .... patients were included in
+the morbidity and mortality screening process between 2014 and 2022. ...
+of these patients were also admitted to the ICU. ... patients were
+excluded as they were younger than 15 years and ... patients were
+excluded because they were dead on arrival. This leaves us with 167
+outcomes.
+
+## Statistical methods
+
+Bivariable logistic regression was used to determine unadjusted
+associations and multivariable logistic regression to determine adjusted
+associations between patient and process factors and OFI. Odds ratios
+(OR) with associated 95% confidence intervals was used with a 5%
+significance level.
+
+## Ethical considerations
+
+There are several ethical aspects to take into consideration regarding
+this study: voluntary participation, informed consent, anonymity,
+confidentiality, potential for harm and results communication.
+
+As described previously, all patients with trauma team activation or
+high ISS scores are included in the database used for this study. Having
+suffered severe trauma might not be something the patients or their
+relatives would want to be public information as the collected data
+contain for instance vital parameters and demise as well as type of
+trauma and time of arrival to the hospital, which might be sensitive
+information. Therefore, the ethical aspect of voluntary participation
+and informed consent has to be considered. The data in national
+databases is collected from all patients registered and is not based on
+consent, even though it might be informed, which is a drawback.
+
+To respect the anonymity and confidentiality aspect the statistical
+analysis was first conducted on synthetic data and later implemented on
+the data collected from the trauma registry and the trauma care quality
+database in order to protect personal numbers and their associated
+information. The anonymity might ease the discomfort among the involved
+patients and their relatives.
+
+There is no direct potential for harm by being included in the study as
+no intervention is made and it is an observational study.
+
+In regard to results communication, the results from research based on
+the data as well as a compilation of the original data is public. The
+data being accessible for research does not directly benefit the
+affected individual; however, it contributes greatly to the development
+of the hospital care in Sweden, making it more efficient and equal.
+Studies performed on data from the Karolinska University Hospital in
+Solna are made to improve local trauma care systems. This way, it can
+also benefit the society as improved local trauma care decreases trauma
+death rate and improves quality of care and thus patient safety.
+
+Based on these arguments it can be concluded that the advantages
+outweigh the disadvantages. The advantages being the contribution to the
+development of trauma systems which long-term improves patient safety
+and equality, and that the study protects the individual's anonymity and
+confidentiality by using synthetic data and later implementing it on the
+real data. The disadvantage being the potential emotional harm from the
+absence of voluntary participation.
+
+The study was approved by the Swedish Ethical Review Authority, approval
+numbers 2023-02975-02, 2021-03531, 2021-02541.
+
+# Results
+
+[n] patients were included in the trauma registry and trauma care
+quality database between 2017 and 2022. [n] patients were excluded,
+leaving a total of [n] patients eligible for the study. [n] were
+excluded because they were under 15 years old. [n] patients were
+excluded because they were dead on arrival. [n] were excluded because
+they were not treated in the ICU, and [n] patients were excluded because
+they had missing data (?).
+
+[n{%}] unique patients of the [n] patients included were flagged with
+OFI. Table 1 illustrates the number of patients flagged per audit filter
+used by the Karolinska University Hospital in Solna.
+
+Table 2 present sample characteristics. [n{%}] patients were male and
+[n{%}] patients were female. [n{%}] patients had no intubation. Most
+patients of the intubated ones were intubated for xx days [n{%}]. The
+number of patients who arrived outside working hours - on Saturday or
+Sunday or after 5 pm or before 8 am were [n{%}]. [n{%}] patients had an
+ASA-score of 1-2 before arrival to the hospital, and [n{%}] patients had
+an ASA-score of 3-7 before arrival to the hospital. [n{%}] patients died
+within 30 days after hospitalization.
+
+Table 3 shows the unadjusted and adjusted associations of the selected
+patient and process factors in relation to OFI. In the unadjusted
+analysis the factors that were significantly associated with the
+presence of OFI were: ... Male
+`r inline_text(table3a, variable = Sex, level = "Male")` Female
+`r inline_text(table3a, variable = Sex, level = "Female")` Age
+`r inline_text(table3a, variable = Age)` No intubation
+`r inline_text(table3a, variable = Intubation, level = "No intubation")`
+Respiratory rate `r inline_text(table3a, variable = RespiratoryRate)`
+Systolic blood pressure
+`r inline_text(table3a, variable = SystolicBloodPressure)` Glasgow Coma
+Scale `r inline_text(table3a, variable = GlasgowComaScale)` Jour
+`r inline_text(table3a, variable = Jour, level = "Yes")` Time to first
+CT `r inline_text(table3a, variable = TimeFCT)` Time to first
+intervention `r inline_text(table3a, variable = TimeFInt)` ASA preinjury
+1-2 `r inline_text(table3a, variable = ASApreinjury, level = "ASA 1-2")`
+Death within 30 days
+`r inline_text(table3a, variable = Survival, level = "Dead")`
+
+In the adjusted analysis the following factors demonstrated significant
+association with OFI: ...
+
+x was significantly associated with increased odds of OFI in both the
+unadjusted and adjusted analyses.
+
+x were not significantly associated with OFI in the unadjusted or the
+adjusted analyses.
+
+## Participants
+
+```{=html}
+<!-- (a) Report numbers of individuals at each stage of study—eg numbers
 potentially eligible, examined for eligibility, confirmed eligible,
 included in the study, completing follow-up, and analysed
 
@@ -158,10 +435,12 @@ included in the study, completing follow-up, and analysed
 
 (c) Consider use of a flow diagram
 
-Descriptive data
-----------------
+-->
+```
+## Descriptive data
 
-(a) Give characteristics of study participants (eg demographic,
+```{=html}
+<!-- (a) Give characteristics of study participants (eg demographic,
 clinical, social) and information on exposures and potential
 confounders
 
@@ -170,23 +449,19 @@ variable of interest
 
 (c) Cohort study — Summarise follow-up time (eg, average and total
 amount)
+-->
+```
+## Outcome data
 
-Outcome data
-------------
-
-Cohort study — Report numbers of outcome events or summary measures
+```{=html}
+<!-- Cohort study — Report numbers of outcome events or summary measures
 over time
+-->
+```
+## Main results
 
-Case-control study — Report numbers in each exposure category, or
-summary measures of exposure
-
-Cross-sectional study — Report numbers of outcome events or summary
-measures
-
-Main results
-------------
-
-(a) Give unadjusted estimates and, if applicable, confounder-adjusted
+```{=html}
+<!-- (a) Give unadjusted estimates and, if applicable, confounder-adjusted
 estimates and their precision (eg, 95% confidence interval). Make
 clear which confounders were adjusted for and why they were included
 
@@ -195,31 +470,18 @@ categorized
 
 (c) If relevant, consider translating estimates of relative risk into
 absolute risk for a meaningful time period
+-->
+```
+## Other analyses
 
-Other analyses 
---------------
-
-Report other analyses done—eg analyses of subgroups and interactions,
+```{=html}
+<!--Report other analyses done—eg analyses of subgroups and interactions,
 and sensitivity analyses 
 -->
-
-You can include code in this document like this:
-
-```{r main, echo=FALSE}
-source("main.R") ## This "imports" the main script file of your project and run any code in it
 ```
+# Discussion
 
-You can also embed plots:
-
-```{r plot, echo=FALSE}
-plot(pressure)
-```
-
-You can also mix text and code, so called inline code, like this: `r 2+5`.
-
-Discussion
-==========
-
+```{=html}
 <!--
 
 Key results
@@ -246,13 +508,11 @@ Generalisability
 Discuss the generalisability (external validity) of the study results
 
 -->
-
-Conclusion
-==========
+```
+# Conclusion
 
 <!-- Give a short conclusion, corresponding to the aim -->
 
-References
-==========
+# References
 
 <!-- Do not edit by hand, references will be inserted and formatted automatically once you knit this document -->
