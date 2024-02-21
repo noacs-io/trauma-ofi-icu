@@ -123,7 +123,7 @@ interhospital transportation, telecommunication and in-hospital care all
 play a central role in reducing overall impact after trauma [@1].
 Disability-adjusted life-years (DALYs) is a way to measure
 post-discharge quality of life. Trauma accounts for one-tenth of DALYs,
-most of the burden in low and middle income countries (LMIC) [@5, @6].
+most of the burden in low- and middle-income countries (LMIC) [@5, @6].
 Trauma costs approximately 3% of gross domestic product (GDP) yearly
 globally, as it mostly affects the working population [@7].
 
@@ -137,7 +137,7 @@ process intervention in the intensive care unit is highly-staffed ICUs
 that has been associated with improved outcomes, as well as bundles to
 recognize and treat common conditions such as those for treating sepsis
 and ventilator-associated pneumonia [@9]. The intention of quality
-improvement is objective improvement in regards to preventability. A
+improvement is objective improvement in regard to preventability. A
 cornerstone in developing the trauma quality improvement programs is
 therefore multidisciplinary mortality and morbidity review. The purpose
 of these is to discuss preventable deaths and identifying OFIs in trauma
@@ -207,7 +207,7 @@ aspect. According to a study from Japan on the medical aspect, the
 primary medical causes of death after trauma are haemorrhage,
 sepsis/multiorgan failure and central nervous system injury. Delayed
 hemostatic procedures and transfusions were common areas for improvement
-in the hospital stage [@13]. The most prominent OFI in regards to
+in the hospital stage [@13]. The most prominent OFI in regard to
 haemorrhage was decision-making compared to errors in technical skill.
 The OFIs frequently involved the decision between radiology, surgery and
 further investigation [@14].
@@ -235,17 +235,19 @@ patients still have a higher risk of developing complications or dying.
 Some might even be in such a bad condition that they die just when they
 have been admitted to the ICU from the ward or emergency care [@9].
 
-## Aim
-
 Many patients with severe trauma are admitted to the intensive care unit
 (ICU), but little is known about opportunities for improvement in this
 group of patients. This being due to the patients admitted to the ICU
 being more complex. Identifying OFIs in this group can therefore be more
 of a challenge. There are existing studies on different aspects of
 trauma care improvement, but studies focusing mainly on OFI in the ICU
-are few. The aim of this study is therefore to characterise OFI in adult
-trauma patients admitted to the ICU and assess how patient factors are
-associated with OFI in these patients.
+are few.
+
+## Aim
+
+The aim of this study is to characterise OFI in adult trauma patients
+admitted to the ICU and assess how patient factors are associated with
+OFI in these patients.
 
 # Methods
 
@@ -315,9 +317,6 @@ excluded as they were younger than 15 years and ... patients were
 excluded because they were dead on arrival. This leaves us with 167
 outcomes.
 
-This paragraph is not finished! Will finish after I start working on the
-real data. Will maybe add a table.
-
 ## Statistical methods
 
 Bivariable logistic regression was used to determine unadjusted
@@ -376,23 +375,54 @@ numbers 2023-02975-02, 2021-03531, 2021-02541.
 
 # Results
 
-Table 1: deskriptiv tabell, stratifierad från utfallet, förslag är att
-använda:
-<https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html>
+[n] patients were included in the trauma registry and trauma care
+quality database between 2017 and 2022. [n] patients were excluded,
+leaving a total of [n] patients eligible for the study. [n] were
+excluded because they were under 15 years old. [n] patients were
+excluded because they were dead on arrival. [n] were excluded because
+they were not treated in the ICU, and [n] patients were excluded because
+they had missing data (?).
 
-Table 2: huvudresultat, förslag att använda:
-<https://www.danieldsjoberg.com/gtsummary/reference/tbl_regression.html>
-presentera ojusterad (univariable logistisk regression) och justerad
-(multivariable log reg)
+[n{%}] unique patients of the [n] patients included were flagged with
+OFI. Table 1 illustrates the number of patients flagged per audit filter
+used by the Karolinska University Hospital in Solna.
 
-Tillse korrekt presentation av resultaten i textformat:
-<https://www.danieldsjoberg.com/gtsummary/articles/inline_text.html?q=tbl%20_%20re#inline_text_tbl_regression>
+Table 2 present sample characteristics. [n{%}] patients were male and
+[n{%}] patients were female. [n{%}] patients had no intubation. Most
+patients of the intubated ones were intubated for xx days [n{%}]. The
+number of patients who arrived outside working hours - on Saturday or
+Sunday or after 5 pm or before 8 am were [n{%}]. [n{%}] patients had an
+ASA-score of 1-2 before arrival to the hospital, and [n{%}] patients had
+an ASA-score of 3-7 before arrival to the hospital. [n{%}] patients died
+within 30 days after hospitalization.
 
-Ytterligare tabeller, audit filtren? En flow chart för
-inklusion/exklusion?
+Table 3 shows the unadjusted and adjusted associations of the selected
+patient and process factors in relation to OFI. In the unadjusted
+analysis the factors that were significantly associated with the
+presence of OFI were: ... Male
+`r inline_text(table3a, variable = Sex, level = "Male")` Female
+`r inline_text(table3a, variable = Sex, level = "Female")` Age
+`r inline_text(table3a, variable = Age)` No intubation
+`r inline_text(table3a, variable = Intubation, level = "No intubation")`
+Respiratory rate `r inline_text(table3a, variable = RespiratoryRate)`
+Systolic blood pressure
+`r inline_text(table3a, variable = SystolicBloodPressure)` Glasgow Coma
+Scale `r inline_text(table3a, variable = GlasgowComaScale)` Jour
+`r inline_text(table3a, variable = Jour, level = "Yes")` Time to first
+CT `r inline_text(table3a, variable = TimeFCT)` Time to first
+intervention `r inline_text(table3a, variable = TimeFInt)` ASA preinjury
+1-2 `r inline_text(table3a, variable = ASApreinjury, level = "ASA 1-2")`
+Death within 30 days
+`r inline_text(table3a, variable = Survival, level = "Dead")`
 
-```         
-```
+In the adjusted analysis the following factors demonstrated significant
+association with OFI: ...
+
+x was significantly associated with increased odds of OFI in both the
+unadjusted and adjusted analyses.
+
+x were not significantly associated with OFI in the unadjusted or the
+adjusted analyses.
 
 ## Participants
 
