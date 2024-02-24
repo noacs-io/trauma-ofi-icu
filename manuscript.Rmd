@@ -157,14 +157,14 @@ provides means of correcting errors and improving future trauma care.
 The audit filters were introduced by the American College of Surgeons
 1995; however, they have been criticized as they may not be directly
 linked to meaningful clinical or patient-centered outcomes [@11]. At the
-Karolinska University Hospital in Solna local audit filters are used,
-shown in Table 1. These local audit filters include: systolic blood
-pressure under 90, GCS \< 9 and not intubated, ISS \> 15 but not
-admitted to the ICU, ISS \> 15 and no trauma team activation, no
-anticoagulation treatment within 72 h after traumatic brain injury, time
-to acute intervention more than 60 minutes, time to CT more than 30
-minutes, liver or spleen injury, cardiopulmonary resuscitation with
-thoracotomy, massive transfusion and death within 30 days after trauma.
+Karolinska University Hospital in Solna local audit filters are used.
+These local audit filters include: systolic blood pressure under 90, GCS
+\< 9 and not intubated, ISS \> 15 but not admitted to the ICU, ISS \> 15
+and no trauma team activation, no anticoagulation treatment within 72 h
+after traumatic brain injury, time to acute intervention more than 60
+minutes, time to CT more than 30 minutes, liver or spleen injury,
+cardiopulmonary resuscitation with thoracotomy, massive transfusion and
+death within 30 days after trauma.
 
 ## Injury score systems
 
