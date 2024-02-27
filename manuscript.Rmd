@@ -31,11 +31,11 @@ from the Karolinska University Hospital in Solna who had been admitted
 to the ICU and who were reviewed regarding the presence of OFI by the
 mortality and morbidity conference. Bi-variable and multivariable
 logistic regression was used to assess the following patient and process
-factors and OFI among this group of patients: gender, age, survival
-after 30 days, Glasgow Coma Scale (GCS), respiratory rate, systolic
-blood pressure, working hours, weekend, time from arrival at the
-hospital until first computed tomography (CT), if the patient was
-intubated and Injury Severity Score (ISS).
+factors and OFI among this group of patients: gender, age, if the
+patient was intubated or not and how many days, respiratory rate,
+systolic blood pressure, Glasgow Coma Scale (GCS), Injury Severity Score
+(ISS), on call, time from arrival at the hospital until first computed
+tomography (CT), ASA preinjury and survival after 30 days.
 
 ## Results
 
@@ -255,10 +255,11 @@ OFI in these patients.
 
 We conducted a retrospective single-centre cohort study based on data
 from the Karolinska University Hospital in Solna and from the Swedish
-Trauma registry. We used R for all statistical analyses [@19]. A
-complete case analysis was conducted after handling missing values in
-systolic blood pressure, respiratory rate and GCS score. We present
-sample characteristics using descriptive statistics.
+Trauma registry. We used R for all statistical analyses [@19]. For
+patients where hospital values for systolic blood pressure, respiratory
+rate or GCS score were missing, prehospital values were used instead. A
+complete case analysis was conducted after handling missing values. We
+present sample characteristics using descriptive statistics.
 
 ## Setting
 
@@ -284,7 +285,7 @@ activation, regardless of Injury Severity Score (ISS), as well as
 patients admitted without trauma team activation but found to have an
 ISS of more than 9. We included all patients who had been included in
 the morbidity and mortality screening process between January 1, 2014
-and June 1, 2022 and who were also admitted to the ICU. We excluded
+and February 1, 2023 and who were also admitted to the ICU. We excluded
 patients who were younger than 15 years and patients who were dead on
 arrival.
 
@@ -300,22 +301,23 @@ treated in the ICU based on patient and process factors.
 The quantitative variables were factors chosen from the trauma registry,
 based on the locally used audit filters, standard epidemiological
 factors and factors registered in the Swedish Trauma Registry. The
-categorical factors were sex, survival after 30 days, GCS, respiratory
-rate, systolic blood pressure, working hours, weekend, time from arrival
-at the hospital until first CT, if the patient was intubated, age and
-Injury Severity Score (ISS). Working hours was defined as between 8.00
-a.m. and 5 p.m., or during a weekend, defined as Saturday or Sunday.
+categorical factors were sex, age, if the patient was intubated or not
+and how many days, respiratory rate, systolic blood pressure, Glasgow
+Coma Scale (GCS), Injury Severity Score (ISS), on call, time from
+arrival at the hospital until first computed tomography (CT), ASA
+preinjury and survival after 30 days. On duty was defined as before 8.00
+a.m., after 5 p.m., or during a weekend - defined as Saturday or Sunday.
 
 ## Study size
 
-There were ... patients in the trauma registry. ... with trauma team
-activation regardless of ISS score, ... patients admitted without trauma
-team activation but with ISS score \> 9. .... patients were included in
-the morbidity and mortality screening process between 2014 and 2022. ...
-of these patients were also admitted to the ICU. ... patients were
-excluded as they were younger than 15 years and ... patients were
-excluded because they were dead on arrival. This leaves us with 167
-outcomes.
+There were ... patients in the trauma registry between January 1 2014
+and February 1 2023. ... with trauma team activation regardless of ISS
+score, ... patients admitted without trauma team activation but with ISS
+score \> 9. .... patients were included in the morbidity and mortality
+screening process between 2014 and 2022. ... of these patients were also
+admitted to the ICU. ... patients were excluded as they were younger
+than 15 years and ... patients were excluded because they were dead on
+arrival. This leaves us with 167 outcomes.
 
 ## Statistical methods
 
@@ -375,19 +377,18 @@ numbers 2023-02975-02, 2021-03531, 2021-02541.
 
 # Results
 
-[n] patients were included in the trauma registry and trauma care
-quality database between 2017 and 2022. [n] patients were excluded,
-leaving a total of [n] patients eligible for the study. [n] were
-excluded because they were under 15 years old. [n] patients were
-excluded because they were dead on arrival. [n] were excluded because
-they were not treated in the ICU, and [n] patients were excluded because
-they had missing data (?).
+14,022 patients were included in the trauma registry and trauma care
+quality database between 2017 and 2023. 12,278 patients were excluded,
+leaving a total of 1,744 patients eligible for the study. 11,343 were
+excluded because they were not treated in the ICU. 3 patients were
+excluded because they were under 15 years old. 6 patients were excluded
+because they were dead on arrival, and 926 patients were excluded
+because there was no data on the presence or absence OFI.
 
-[n{%}] unique patients of the [n] patients included were flagged with
-OFI. Table 1 illustrates the number of patients flagged per audit filter
-used by the Karolinska University Hospital in Solna.
+[n] patients were excluded because there was missing data, leaving a
+total of [n] patients included in the study.
 
-Table 2 present sample characteristics. [n{%}] patients were male and
+Table 1 present sample characteristics. [n{%}] patients were male and
 [n{%}] patients were female. [n{%}] patients had no intubation. Most
 patients of the intubated ones were intubated for xx days [n{%}]. The
 number of patients who arrived outside working hours - on Saturday or
@@ -396,7 +397,7 @@ ASA-score of 1-2 before arrival to the hospital, and [n{%}] patients had
 an ASA-score of 3-7 before arrival to the hospital. [n{%}] patients died
 within 30 days after hospitalization.
 
-Table 3 shows the unadjusted and adjusted associations of the selected
+Table 2 shows the unadjusted and adjusted associations of the selected
 patient and process factors in relation to OFI. In the unadjusted
 analysis the factors that were significantly associated with the
 presence of OFI were: ... Male
@@ -426,90 +427,68 @@ adjusted analyses.
 
 ## Participants
 
-```{=html}
-<!-- (a) Report numbers of individuals at each stage of study—eg numbers
-potentially eligible, examined for eligibility, confirmed eligible,
-included in the study, completing follow-up, and analysed
+<!-- Flowchart -->
 
-(b) Give reasons for non-participation at each stage
-
-(c) Consider use of a flow diagram
-
--->
-```
 ## Descriptive data
 
-```{=html}
-<!-- (a) Give characteristics of study participants (eg demographic,
-clinical, social) and information on exposures and potential
-confounders
+<!-- Sample characteristics - Table1, do I need to display number of missing for each variable? -->
 
-(b) Indicate number of participants with missing data for each
-variable of interest
-
-(c) Cohort study — Summarise follow-up time (eg, average and total
-amount)
--->
-```
-## Outcome data
-
-```{=html}
-<!-- Cohort study — Report numbers of outcome events or summary measures
-over time
--->
-```
 ## Main results
 
-```{=html}
-<!-- (a) Give unadjusted estimates and, if applicable, confounder-adjusted
-estimates and their precision (eg, 95% confidence interval). Make
-clear which confounders were adjusted for and why they were included
+<!--  Adjusted and unadjusted analysis - Table 2 -->
 
-(b) Report category boundaries when continuous variables were
-categorized
-
-(c) If relevant, consider translating estimates of relative risk into
-absolute risk for a meaningful time period
--->
-```
-## Other analyses
-
-```{=html}
-<!--Report other analyses done—eg analyses of subgroups and interactions,
-and sensitivity analyses 
--->
-```
 # Discussion
 
-```{=html}
-<!--
+### Key results
 
-Key results
------------
-Summarise key results with reference to study objectives
+We found that --- was associated with higher odds of OFI. Previous
+research ...
 
-Limitations
------------
+These findings could be because ...
 
-Discuss limitations of the study, taking into account sources of
-potential bias or imprecision.  Discuss both direction and magnitude
-of any potential bias
+\-- was associated with OFI in the unadjusted analysis but not in the
+adjusted analysis.
 
-Interpretation
---------------
+1.  add sources from previous studies
 
-Give a cautious overall interpretation of results considering
-objectives, limitations, multiplicity of analyses, results from
-similar studies, and other relevant evidence
+2.  studies to back up the results from the analyses
 
-Generalisability
-----------------
+### Limitations
 
-Discuss the generalisability (external validity) of the study results
+There were several limitations in our study. The selection for review
+for the morbidity and mortality review relied mostly on the local audit
+filters used at the Karolinska Institute Hospital in Solna. This leads
+to a risk of misplacement where some patients with OFI were not selected
+by for the review based on the audit filters although there was an OFI.
 
--->
-```
+Another limtation is that some relevant factors, such as ----, were not
+part of the Swedish Trauma registry and therefore not adjusted for in
+the analysis.
+
+The study was a single-center study and illustrate the situation in
+Stockholm. More study is needed on the area of OFI in patients admitted
+to the ICU. A suggestion would be to conduct a multi-center study on
+this group of patients to further investigate areas for improvement and
+to further develop trauma quality programs.
+
+Future studies could also focus on ---- which was seen to be associated
+with OFI in these patients.
+
+<!--Lägg till 2 st förslag på explicita fortsättningsstudier! -->
+
+### Generalisability
+
+The study is conducted on --- outcomes. There were few outcomes because
+we included only those who were admitted to the ICU, \> 14 years old,
+not dead on arrival and had a registration for the presence or absence
+of OFI. The external validity is therefore compromised due to the
+limited size of the Swedish database. However, ...
+
 # Conclusion
+
+---- among patients admitted to the ICU have higher odds of OFI. These
+factors can be seen as new targets for further reseach to further
+supplement trauma quality improvement programs.
 
 <!-- Give a short conclusion, corresponding to the aim -->
 
