@@ -96,7 +96,7 @@ subdat <- merged.data %>%
   select(ofi, pt_Gender, pt_age_yrs,  ed_gcs_sum, ed_sbp_value, ed_rr_value, 
          res_survival, pre_intubated, ed_intubated, dt_ed_first_ct, ISS, DateTime_ArrivalAtHospital, FirstTraumaDT_NotDone,
          host_care_level, hosp_vent_days, pt_asa_preinjury, pre_gcs_sum, 
-         pre_rr_value, pre_sbp_value, Fr1.12, ed_rr_rtscat, ed_sbp_rtscat, pre_rr_rtscat, pre_sbp_rtscat)
+         pre_rr_value, pre_sbp_value, Fr1.12, ed_rr_rtscat, ed_sbp_rtscat, pre_rr_rtscat, pre_sbp_rtscat, iva_dagar_n)
 
 #Converting subdat$ofi to logical so subset can be used 
 subdat$ofi <- ifelse(subdat$ofi == "Yes", TRUE, FALSE)
@@ -134,26 +134,24 @@ ofi$Intubation1 <- ifelse(ofi$pre_intubated == 1, "Intubation",
 #Intubation combined with ventilator days 
 ofi$Intubation <- ifelse(ofi$Intubation1 == "No intubation", "No intubation",
                          ifelse(ofi$Intubation1 == "Intubation" & ofi$hosp_vent_days ==  0, "Intubation 1-3 days",
-                         ifelse(ofi$Intubation1 == "Intubation" & ofi$hosp_vent_days %in% 1:3, "Intubation 1-3 days",
-                                ifelse(ofi$Intubation1 == "Intubation" & ofi$hosp_vent_days %in% 4:7, "Intubation 4-7 days",
+                         ifelse(ofi$Intubation1 == "Intubation" & ofi$hosp_vent_days %in% 1:7, "Intubation 1-7 days",
                                        ifelse(ofi$Intubation1 == "Intubation" & ofi$hosp_vent_days > 7, "Intubation > 7 days", 
-                                              ifelse(ofi$Intubation1 == "Unknown", "Unknown", NA))))))
+                                              ifelse(ofi$Intubation1 == "Unknown", "Unknown", NA)))))
 
 #Respiratory rate 
 ofi$RespiratoryRate <- ifelse(is.na(ofi$ed_rr_value), ofi$pre_rr_value, ofi$ed_rr_value)
-ofi$RespiratoryRate <- ifelse(ofi$ed_rr_value == 99, NA, ofi$ed_rr_value)
 
-ofi$rts_rr <- ifelse(ofi$RespiratoryRate == 0, 0, 
-                      ifelse(ofi$RespiratoryRate %in% 1:5, 1,
-                             ifelse(ofi$RespiratoryRate %in% 6:9, 2,
-                                    ifelse(ofi$RespiratoryRate %in% 10:29, 3,
-                                           ifelse(ofi$RespiratoryRate > 29, 4, NA)))))
+#ofi$rts_rr <- ifelse(ofi$RespiratoryRate == 0, 0, 
+#                      ifelse(ofi$RespiratoryRate %in% 1:5, 1,
+#                             ifelse(ofi$RespiratoryRate %in% 6:9, 2,
+#                                    ifelse(ofi$RespiratoryRate %in% 10:29, 3,
+#                                           ifelse(ofi$RespiratoryRate > 29, 4, NA)))))
 
-ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 0 | ofi$pre_rr_rtscat) == 0, 0, ofi$RespiratoryRate)
-ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 1 | ofi$pre_rr_rtscat) == 1, 3.5, ofi$RespiratoryRate)
-ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 2 | ofi$pre_rr_rtscat) == 2, 7.941176, ofi$RespiratoryRate)
-ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 3 | ofi$pre_rr_rtscat) == 3, 18.56378, ofi$RespiratoryRate)
-ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 4 | ofi$pre_rr_rtscat) == 4, 34.09009, ofi$RespiratoryRate)
+#ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 0 | ofi$pre_rr_rtscat) == 0, 0, ofi$RespiratoryRate)
+#ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 1 | ofi$pre_rr_rtscat) == 1, 3.5, ofi$RespiratoryRate)
+#ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 2 | ofi$pre_rr_rtscat) == 2, 7.941176, ofi$RespiratoryRate)
+#ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 3 | ofi$pre_rr_rtscat) == 3, 18.56378, ofi$RespiratoryRate)
+#ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 4 | ofi$pre_rr_rtscat) == 4, 34.09009, ofi$RespiratoryRate)
 
 #mean(na.omit(ofi$RespiratoryRate[ofi$rts_rr == 0]))
 #NaN
@@ -169,11 +167,11 @@ ofi$RespiratoryRate <- ifelse(is.na(ofi$RespiratoryRate) & (ofi$ed_rr_rtscat == 
 #Systolic blood pressure 
 ofi$SystolicBloodPressure <- ifelse(is.na(ofi$ed_sbp_value), ofi$pre_sbp_value, ofi$ed_sbp_value)
 
-ofi$rts_sbp <- ifelse(ofi$SystolicBloodPressure == 0, 0, 
-                 ifelse(ofi$SystolicBloodPressure %in% 1:49, 1,
-                        ifelse(ofi$SystolicBloodPressure %in% 50:75, 2,
-                               ifelse(ofi$SystolicBloodPressure %in% 76:89, 3,
-                                      ifelse(ofi$SystolicBloodPressure > 89, 4, NA)))))
+#ofi$rts_sbp <- ifelse(ofi$SystolicBloodPressure == 0, 0, 
+#                 ifelse(ofi$SystolicBloodPressure %in% 1:49, 1,
+#                        ifelse(ofi$SystolicBloodPressure %in% 50:75, 2,
+#                               ifelse(ofi$SystolicBloodPressure %in% 76:89, 3,
+#                                      ifelse(ofi$SystolicBloodPressure > 89, 4, NA)))))
                         
 #mean(na.omit(ofi$SystolicBloodPressure[ofi$rts_sbp == 0]))
 #0
@@ -186,14 +184,14 @@ ofi$rts_sbp <- ifelse(ofi$SystolicBloodPressure == 0, 0,
 #mean(na.omit(ofi$SystolicBloodPressure[ofi$rts_sbp == 4]))
 #138.2123
                   
-ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 0 | ofi$pre_sbp_rtscat == 0), 0, ofi$SystolicBloodPressure)
-ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 1 | ofi$pre_sbp_rtscat == 1), 43.25, ofi$SystolicBloodPressure)
-ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 2 | ofi$pre_sbp_rtscat == 2), 62.09346, ofi$SystolicBloodPressure)
-ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 3 | ofi$pre_sbp_rtscat == 3), 82.21978, ofi$SystolicBloodPressure)
-ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 4 | ofi$pre_sbp_rtscat == 4), 138.2123, ofi$SystolicBloodPressure)
+#ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 0 | ofi$pre_sbp_rtscat == 0), 0, ofi$SystolicBloodPressure)
+#ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 1 | ofi$pre_sbp_rtscat == 1), 43.25, ofi$SystolicBloodPressure)
+#ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 2 | ofi$pre_sbp_rtscat == 2), 62.09346, ofi$SystolicBloodPressure)
+#ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 3 | ofi$pre_sbp_rtscat == 3), 82.21978, ofi$SystolicBloodPressure)
+#ofi$SystolicBloodPressure <- ifelse(is.na(ofi$SystolicBloodPressure) & (ofi$ed_sbp_rtscat == 4 | ofi$pre_sbp_rtscat == 4), 138.2123, ofi$SystolicBloodPressure)
 
 #Glasgow Coma Scale
-ofi$GlasgowComaScale <- ifelse(ofi$ed_gcs_sum == 99, NA,
+ofi$GlasgowComaScale <- ifelse(ofi$ed_gcs_sum == 99, 99,
                                ifelse(ofi$ed_gcs_sum == 999, NA,
                                       ifelse(ofi$ed_gcs_sum == 3, 3,
                                              ifelse(ofi$ed_gcs_sum == 4, 4,
@@ -211,6 +209,33 @@ ofi$GlasgowComaScale <- ifelse(ofi$ed_gcs_sum == 99, NA,
   
 
 ofi$GlasgowComaScale <- ifelse(is.na(ofi$ed_gcs_sum), ofi$pre_gcs_sum, ofi$ed_gcs_sum)
+
+#RTS score
+ofi$RTSGCS <- ifelse(ofi$GlasgowComaScale %in% 13:15, 4,
+                     ifelse(ofi$GlasgowComaScale %in% 9:12, 3,
+                            ifelse(ofi$GlasgowComaScale %in% 6:8, 2,
+                                   ifelse(ofi$GlasgowComaScale %in% 4:5, 1,
+                                          ifelse(ofi$GlasgowComaScale == 3, 0,
+                                                 ifelse(ofi$GlasgowComaScale == 99, 0, NA))))))
+
+ofi$RTSSBP <- ifelse(ofi$SystolicBloodPressure > 89, 4,
+                     ifelse(ofi$SystolicBloodPressure %in% 76:89, 3,
+                            ifelse(ofi$SystolicBloodPressure %in% 50:75, 2,
+                                   ifelse(ofi$SystolicBloodPressure %in% 1:49, 1,
+                                          ifelse(ofi$SystolicBloodPressure == 0, 0,
+                                                 ifelse(ofi$SystolicBloodPressure == 99, 0, NA))))))
+  
+ofi$RTSRR <- ifelse(ofi$RespiratoryRate > 29, 4,
+                   ifelse(ofi$RespiratoryRate %in% 10:29, 3,
+                          ifelse(ofi$RespiratoryRate %in% 6:9, 2,
+                                 ifelse(ofi$RespiratoryRate %in% 1:5, 1,
+                                        ifelse(ofi$RespiratoryRate == 0, 0,
+                                               ifelse(ofi$RespiratoryRate == 99, 0, NA)))))) 
+  
+ofi$RTS <- (0.9368*ofi$RTSGCS + 0.7326*ofi$RTSSBP + 0.2908*ofi$RTSRR)
+
+  
+
                               
 #Working hours: arrived between 8 am and 5 pm 
 ofi$hour <- format(ofi$DateTime_ArrivalAtHospital, "%H")
@@ -230,6 +255,10 @@ ofi$OnDuty <- ifelse(ofi$Weekend == "Yes", 1,
 
 #Time to first CT
 ofi$TimeFCT <- ofi$dt_ed_first_ct
+
+#Days in the ICU 
+ofi$daysinICU <- ifelse(ofi$iva_dagar_n < 7, "< 7 days",
+                        ifelse(ofi$iva_dagar_n > 7, "> 7 days", NA))
 
 #Pt ASA preinjury
 ofi$ASApreinjury <- ifelse(ofi$pt_asa_preinjury == 1 | ofi$pt_asa_preinjury == 2, "ASA 1-2",
@@ -256,11 +285,8 @@ library(gt)
 library(forcats)
 library(gtsummary)
 
-#ofi$RespiratoryRate[ofi$RespiratoryRate == 99] <- -99
-#±ofi$GlasgowComaScale[ofi$GlasgowComaScale == 99] <- -99
-
 table1 <- ofi %>% 
-  select(Sex, Age, Intubation, RespiratoryRate, SystolicBloodPressure, GlasgowComaScale, ISS, OnDuty, TimeFCT, 
+  select(Sex, Age, Intubation, RTS, ISS, TimeFCT, OnDuty, daysinICU, 
          ASApreinjury, Survival, OpportunityForImprovement)
 
 
@@ -268,16 +294,13 @@ table1$Intubation <- ifelse(is.na(table1$Intubation), "Unknown", table1$Intubati
 table1 <- na.omit(table1)
 
 table2 <- table1 %>%
-  mutate(Intubation = factor(Intubation, levels = c("No intubation", "Intubation 1-3 days", "Intubation 4-7 days", "Intubation > 7 days", "Unknown"))) %>%
+  mutate(Intubation = factor(Intubation, levels = c("No intubation", "Intubation 1-7 days", "Intubation > 7 days", "Unknown"))) %>%
   tbl_summary(by = OpportunityForImprovement,
-              type = list(OnDuty ~ "dichotomous",
-                          RespiratoryRate ~ "continuous"),
-              label = list(RespiratoryRate = "Respiratory rate",
-                           SystolicBloodPressure = "Systolic blood pressure",
+              type = list(OnDuty ~ "dichotomous"),
+              label = list(RTS = "Revised Trauma Score",
                            ISS = "Injury Severity Score",
-                           GlasgowComaScale = "Glasgow Coma Scale",
                            TimeFCT = "Time to first CT", 
-                           #TimeFInt = "Time to first intervention", 
+                           daysinICU = "Days in the ICU",
                            OnDuty = "On duty",
                            ASApreinjury = "ASA preinjury"),
               statistic = list(
@@ -301,15 +324,12 @@ table2 <- table1 %>%
 #TABLE 2: Adjusted and unadjusted logistic regression
 # Data Preparation
 tablereg <- ofi %>% 
-  select(Sex, Age, Intubation, RespiratoryRate, SystolicBloodPressure, GlasgowComaScale, ISS, OnDuty, TimeFCT, 
+  select(Sex, Age, Intubation, RTS, ISS,TimeFCT, OnDuty, daysinICU, TimeFCT, 
          ASApreinjury, Survival, OpportunityForImprovement1)
 
-tablereg$Intubation <- fct_relevel(tablereg$Intubation, 
-                                   "No intubation", "Intubation 1-3 days", 
-                                   "Intubation 4-7 days", "Intubation > 7 days", 
-                                   "Unknown")
+tablereg$Intubation <- ifelse(is.na(tablereg$Intubation), "Unknown", table1$Intubation)
+tablereg$Intubation <- fct_relevel(tablereg$Intubation, "No intubation", "Intubation 1-7 days", "Intubation > 7 days", "Unknown")
 
-#Error message: 1 unknown level in 'f': Unknown
 
 # Unadjusted Table
 table3a <- tbl_uvregression(data = tablereg,
@@ -317,9 +337,8 @@ table3a <- tbl_uvregression(data = tablereg,
                             y = OpportunityForImprovement1,
                             method.args = list(family = binomial),
                             label = list(
-                              RespiratoryRate = "Respiratory rate",
-                              SystolicBloodPressure = "Systolic blood pressure",
-                              GlasgowComaScale = "Glasgow Coma Scale",
+                              RTS = "Revised Trauma Score",
+                              daysinICU = "Days in the ICU",
                               TimeFInt = "Time to first intervention",
                               ASApreinjury = "ASA preinjury",
                               OnDuty = "On duty",
@@ -328,40 +347,33 @@ table3a <- tbl_uvregression(data = tablereg,
   bold_labels() %>%
   bold_p(t = 0.05) 
 
- print(table3a)
+ #print(table3a)
 
 # Adjusted Table
 #Defining the data in data frame as factors to get output levels instead of NULL
-tablereg$OpportunityForImprovement1 <- factor(tablereg$OpportunityForImprovement1)
-tablereg$Sex <- factor(tablereg$Sex)
-tablereg$Age <- factor(tablereg$Age)
-tablereg$Intubation <- factor(tablereg$Intubation)
-tablereg$RespiratoryRate <- factor(tablereg$RespiratoryRate)
-tablereg$SystolicBloodPressure <- factor(tablereg$SystolicBloodPressure)
-tablereg$ISS <- factor(tablereg$ISS)
-tablereg$GlasgowComaScale <- factor(tablereg$GlasgowComaScale)
-tablereg$Jour <- factor(tablereg$Jour)
-tablereg$TimeFCT <- factor(tablereg$TimeFCT)
-tablereg$ASApreinjury <- factor(tablereg$ASApreinjury)
-tablereg$Survival <- factor(tablereg$Survival)
+#tablereg$OpportunityForImprovement1 <- factor(tablereg$OpportunityForImprovement1)
+#tablereg$Sex <- factor(tablereg$Sex)
+#tablereg$Age <- factor(tablereg$Age)
+#tablereg$Intubation <- factor(tablereg$Intubation)
+#tablereg$RTS <- factor(tablereg$RTS)
+#tablereg$ISS <- factor(tablereg$ISS)
+#tablereg$OnDuty <- factor(tablereg$OnDuty)
+#tablereg$TimeFCT <- factor(tablereg$TimeFCT)
+#tablereg$ASApreinjury <- factor(tablereg$ASApreinjury)
+#tablereg$Survival <- factor(tablereg$Survival)
 
 #Creating linear regression 
-adjusted_table <- glm(OpportunityForImprovement1 ~ Sex + Age + Intubation + RespiratoryRate + SystolicBloodPressure +  ISS + GlasgowComaScale + OnDuty + TimeFCT + ASApreinjury + Survival, family = binomial, data = tablereg) 
-#Warning message: 
-#1. glm.fit: algorithm did not converge
-#2. glm.fit: fitted probabilities numerically 0 or 1 occurred
+adjusted_table <- glm(OpportunityForImprovement1 ~ Sex + Age + Intubation + RTS +  ISS + OnDuty + daysinICU + TimeFCT + ASApreinjury + Survival, family = binomial, data = tablereg) 
 
 table3b <- tbl_regression(adjusted_table,
-                          label = list(RespiratoryRate = "Respiratory rate",
-                                       SystolicBloodPressure = "Systolic blood pressure",
-                                       GlasgowComaScale = "Glasgow Coma Scale",
+                          label = list(RTS = "Revised Trauma Score",
+                                       daysinICU = "Days in the ICU",
                                        ASApreinjury = "ASA preinjury",
                                        TimeFCT = "Time to first CT")) %>%
   bold_labels() %>%
-  bold_p() %>%
   bold_p(t = 0.05)
 
-  print(table3b)
+ # print(table3b)
 
 # Merging Tables
 table3_merge <- tbl_merge(tbls = list(table3a, table3b),
