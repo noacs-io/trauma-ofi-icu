@@ -271,12 +271,9 @@ direct access to radiology, surgery, emergency medicine, intensive care
 and consultants from relevant specialities [@18]. All patients are
 included in a mortality and morbidity screening combining individual
 review and specific audit filters by specialized nurses. The patients
-who are identified as having higher probability for OFI are discussed in
-a multidisciplinary conference held every 6-8 weeks. Examples of OFI
+who are identified as having higher probability for OFI are discussed in a multidisciplinary conference held every 6-8 weeks. Examples of OFI
 include the need for better organization or more senior members taking
-part in the trauma care. The presence or absence of OFI is decided among
-the participants of the conference and then recorded in the trauma care
-quality database.
+part in the trauma care. The presence or absence of OFI is decided among the participants of the conference and then recorded in the trauma care quality database.
 
 ## Participants
 
@@ -310,14 +307,14 @@ a.m., after 5 p.m., or during a weekend - defined as Saturday or Sunday.
 
 ## Study size
 
-There were ... patients in the trauma registry between January 1 2014
-and February 1 2023. ... with trauma team activation regardless of ISS
-score, ... patients admitted without trauma team activation but with ISS
-score \> 9. .... patients were included in the morbidity and mortality
-screening process between 2014 and 2022. ... of these patients were also
-admitted to the ICU. ... patients were excluded as they were younger
-than 15 years and ... patients were excluded because they were dead on
-arrival. This leaves us with 167 outcomes.
+There were 14,022 patients in the trauma registry between January 1 2014
+and February 1 2023. 2679 of these patients were 
+admitted to the ICU. 3 patients were then excluded as they were younger
+than 15 years and 6 patients were excluded because they were dead on
+arrival. 928 patients were excluded because there was no registration on whether there was an OFI or not. 293 patients were excluded because they had missing values in one or more variables.
+This leaves us with 143 outcomes for OFI, and 1,306 outcomes for "No OFI". 
+
+#Detta blir upprepning då det redan står längre ner i resultatdelen? 
 
 ## Statistical methods
 
@@ -334,11 +331,7 @@ this study: voluntary participation, informed consent, anonymity,
 confidentiality, potential for harm and results communication.
 
 As described previously, all patients with trauma team activation or
-high ISS scores are included in the database used for this study. Having
-suffered severe trauma might not be something the patients or their
-relatives would want to be public information as the collected data
-contain for instance vital parameters and demise as well as type of
-trauma and time of arrival to the hospital, which might be sensitive
+high ISS scores are included in the database used for this study. Having suffered severe trauma might not be something the patients or their relatives would want to be public information as the collected data contain for instance vital parameters and demise as well as type of trauma and time of arrival to the hospital, which might be sensitive
 information. Therefore, the ethical aspect of voluntary participation
 and informed consent has to be considered. The data in national
 databases is collected from all patients registered and is not based on
@@ -355,7 +348,7 @@ There is no direct potential for harm by being included in the study as
 no intervention is made and it is an observational study.
 
 In regard to results communication, the results from research based on
-the data as well as a compilation of the original data is public. The
+the data as well as a compilation of the original data is public. The
 data being accessible for research does not directly benefit the
 affected individual; however, it contributes greatly to the development
 of the hospital care in Sweden, making it more efficient and equal.
@@ -376,54 +369,38 @@ The study was approved by the Swedish Ethical Review Authority, approval
 numbers 2023-02975-02, 2021-03531, 2021-02541.
 
 # Results
+```{r}
+library(gtsummary)
+source("main.R")
+```
+
 
 14,022 patients were included in the trauma registry and trauma care
 quality database between 2017 and 2023. 12,278 patients were excluded,
-leaving a total of 1,744 patients eligible for the study. 11,343 were
+leaving a total of 1,742 patients eligible for the study. 11,343 were
 excluded because they were not treated in the ICU. 3 patients were
 excluded because they were under 15 years old. 6 patients were excluded
-because they were dead on arrival, and 926 patients were excluded
+because they were dead on arrival, and 928 patients were excluded
 because there was no data on the presence or absence OFI.
 
-[n] patients were excluded because there was missing data, leaving a
-total of [n] patients included in the study.
+293 patients were excluded because there was missing data, leaving a
+total of 1,449 patients included in the study.
 
-Table 1 present sample characteristics. [n{%}] patients were male and
-[n{%}] patients were female. [n{%}] patients had no intubation. Most
-patients of the intubated ones were intubated for xx days [n{%}]. The
-number of patients who arrived outside working hours - on Saturday or
-Sunday or after 5 pm or before 8 am were [n{%}]. [n{%}] patients had an
-ASA-score of 1-2 before arrival to the hospital, and [n{%}] patients had
-an ASA-score of 3-7 before arrival to the hospital. [n{%}] patients died
-within 30 days after hospitalization.
+Table 1 present sample characteristics. 1,096 (76%) patients were male and 353 (24%) patients were female. 846 (58%) patients had no intubation, 241 (17%) patients were intubated for 1-7 days and 113 (7,8%) patients were intubated for more than 7 days. The number of patients who arrived outside working hours — on Saturday or Sunday or after 5 pm or before 8 am were 1,042 (72%). 1,064 (73%) patients were equal to or less than 7 days in the ICU, and 385 (27%) patients were more than 7 days in the ICU. 1,080 (75%) patients had an ASA-score of 1-2 before arrival to the hospital, and 369 (25%) patients had an ASA-score of 3-7 before arrival to the hospital. 286 (20%) patients died within 30 days after hospitalization.
 
 Table 2 shows the unadjusted and adjusted associations of the selected
 patient and process factors in relation to OFI. In the unadjusted
 analysis the factors that were significantly associated with the
-presence of OFI were: ... Male
-`r inline_text(table3a, variable = Sex, level = "Male")` Female
-`r inline_text(table3a, variable = Sex, level = "Female")` Age
-`r inline_text(table3a, variable = Age)` No intubation
-`r inline_text(table3a, variable = Intubation, level = "No intubation")`
-Respiratory rate `r inline_text(table3a, variable = RespiratoryRate)`
-Systolic blood pressure
-`r inline_text(table3a, variable = SystolicBloodPressure)` Glasgow Coma
-Scale `r inline_text(table3a, variable = GlasgowComaScale)` Jour
-`r inline_text(table3a, variable = Jour, level = "Yes")` Time to first
-CT `r inline_text(table3a, variable = TimeFCT)` Time to first
-intervention `r inline_text(table3a, variable = TimeFInt)` ASA preinjury
-1-2 `r inline_text(table3a, variable = ASApreinjury, level = "ASA 1-2")`
-Death within 30 days
-`r inline_text(table3a, variable = Survival, level = "Dead")`
+presence of OFI were: Revised Trauma Score `r inline_text(table3a, variable = RTS)`,
+≤ 7 days in the ICU `r inline_text(table3a, variable = daysinICU, level = "≤ 7 days")` and death within 30 days after hospitalization `r inline_text(table3a, variable = Survival, level = "Dead")`.
 
 In the adjusted analysis the following factors demonstrated significant
-association with OFI: ...
+association with OFI: Revised Trauma Score `r inline_text(table3b, variable = RTS)` and ≤ 7 days in the ICU `r inline_text(table3b, variable = daysinICU, level = "≤ 7 days")`.
 
-x was significantly associated with increased odds of OFI in both the
+RTS and ≤ 7 days in the ICU were significantly associated with increased odds of OFI in both the
 unadjusted and adjusted analyses.
 
-x were not significantly associated with OFI in the unadjusted or the
-adjusted analyses.
+Sex, Age, Intubation, ISS, time to first CT, on duty and ASA preinjury were not significantly associated with OFI in the unadjusted or the adjusted analyses. Female sex, intubation > 7 days, > 7 days in the ICU, ASA preinjury 1-2 and survival 30 days after hospitalisation could not be analysed with logistic regression. 
 
 ## Participants
 
@@ -441,12 +418,12 @@ adjusted analyses.
 
 ### Key results
 
-We found that --- was associated with higher odds of OFI. Previous
-research ...
+We found that RTS and ≤ 7 days in the ICU were associated with higher odds of OFI. Previous
+research has shown that ... 
 
 These findings could be because ...
 
-\-- was associated with OFI in the unadjusted analysis but not in the
+Death within 30 days after hospitalisation was associated with OFI in the unadjusted analysis but not in the
 adjusted analysis.
 
 1.  add sources from previous studies
@@ -478,7 +455,7 @@ with OFI in these patients.
 
 ### Generalisability
 
-The study is conducted on --- outcomes. There were few outcomes because
+The study is conducted on 143 outcomes of OFI. There were few outcomes because
 we included only those who were admitted to the ICU, \> 14 years old,
 not dead on arrival and had a registration for the presence or absence
 of OFI. The external validity is therefore compromised due to the
