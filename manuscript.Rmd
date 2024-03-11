@@ -307,8 +307,8 @@ a.m., after 5 p.m., or during a weekend - defined as Saturday or Sunday.
 
 ## Study size
 
-There were 14,022 patients in the trauma registry between January 1 2014
-and February 1 2023. 2679 of these patients were 
+There were 14,022 patients in the trauma registry between January 1 2013
+and February 28 2023. 2679 of these patients were 
 admitted to the ICU. 3 patients were then excluded as they were younger
 than 15 years and 6 patients were excluded because they were dead on
 arrival. 928 patients were excluded because there was no registration on whether there was an OFI or not. 293 patients were excluded because they had missing values in one or more variables.
@@ -369,10 +369,42 @@ The study was approved by the Swedish Ethical Review Authority, approval
 numbers 2023-02975-02, 2021-03531, 2021-02541.
 
 # Results
-```{r}
-library(gtsummary)
-source("main.R")
+## Participants
+```{r, include=FALSE}
+source("functions/flowchart.R")
 ```
+```{r}
+for (i in 1:(length(vert) - 1)) {
+  connectGrob(vert[[i]], vert[[i + 1]], type = "vert") %>%
+    print
+}
+
+connectGrob(vert$eligible, excluded, type = "L")
+connectGrob(vert$included, excluded1, type = "L")
+
+vert
+excluded
+excluded1
+```
+
+## Descriptive data
+```{r include_scripts, echo=FALSE, include=FALSE}
+source("functions/table1.R")
+```
+```{r}
+table2
+```
+
+
+
+## Main results
+```{r, include=FALSE}
+source("functions/table2.R")
+```
+```{r}
+table3_merge
+```
+
 
 
 14,022 patients were included in the trauma registry and trauma care
@@ -401,18 +433,6 @@ RTS and ≤ 7 days in the ICU were significantly associated with increased odds 
 unadjusted and adjusted analyses.
 
 Sex, Age, Intubation, ISS, time to first CT, on duty and ASA preinjury were not significantly associated with OFI in the unadjusted or the adjusted analyses. Female sex, intubation > 7 days, > 7 days in the ICU, ASA preinjury 1-2 and survival 30 days after hospitalisation could not be analysed with logistic regression. 
-
-## Participants
-
-<!-- Flowchart -->
-
-## Descriptive data
-
-<!-- Sample characteristics - Table1, do I need to display number of missing for each variable? -->
-
-## Main results
-
-<!--  Adjusted and unadjusted analysis - Table 2 -->
 
 # Discussion
 
