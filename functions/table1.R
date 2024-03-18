@@ -16,6 +16,7 @@ library(dplyr)
 #install.packages("gtsummary")
 library(gtsummary)
 library(tidyverse)
+library(officer)
 
 
 #FLOWCHART: included/excluded
@@ -115,15 +116,15 @@ ofi$RTSSBP <- ifelse(ofi$SystolicBloodPressure > 89, 4,
                                           ifelse(ofi$SystolicBloodPressure == 0, 0,
                                                  ifelse(ofi$SystolicBloodPressure == 99, 0, NA))))))
 
-ofi$RTSRR <- ifelse(ofi$RespiratoryRate > 29, 4,
-                    ifelse(ofi$RespiratoryRate %in% 10:29, 3,
+ofi$RTSRR <- ifelse(ofi$RespiratoryRate %in% 10:29, 4,
+                    ifelse(ofi$RespiratoryRate >29, 3,
                            ifelse(ofi$RespiratoryRate %in% 6:9, 2,
                                   ifelse(ofi$RespiratoryRate %in% 1:5, 1,
                                          ifelse(ofi$RespiratoryRate == 0, 0,
                                                 ifelse(ofi$RespiratoryRate == 99, 0, NA)))))) 
 
 ofi$RTS <- (0.9368*ofi$RTSGCS + 0.7326*ofi$RTSSBP + 0.2908*ofi$RTSRR)
-
+#ofi$RTS <- (ofi$RTSGCS + ofi$RTSSBP + ofi$RTSRR)
 
 
 
@@ -172,6 +173,8 @@ ofi$OpportunityForImprovement1 <- ifelse(ofi$OpportunityForImprovement == "Oppor
 #Creating new table with defined data 
 library(dplyr)
 library(gt)
+#install.packages("flextable")
+library(flextable)
 
 table1 <- ofi %>% 
   select(Sex, Age, Intubation, RTS, ISS, TimeFCT, OnDuty, daysinICU, 
@@ -207,4 +210,5 @@ table2 <- table1 %>%
   bold_labels() %>% 
   add_overall(last = TRUE) %>% 
   modify_caption("<div style='text-align: left; font-weight: bold; color: black'>Table 1. Sample Characteristics</div>") %>% 
+ # as_flex_table() %>%
   print()

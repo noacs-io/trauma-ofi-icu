@@ -13,6 +13,7 @@ table3a <- tbl_uvregression(data = tablereg,
                             method = glm,
                             y = OpportunityForImprovement1,
                             method.args = list(family = binomial),
+                            exponentiate = TRUE, 
                             label = list(
                               RTS = "Revised Trauma Score",
                               daysinICU = "Days in the ICU",
@@ -31,6 +32,7 @@ table3a <- tbl_uvregression(data = tablereg,
 adjusted_table <- glm(OpportunityForImprovement1 ~ Sex + Age + Intubation + RTS +  ISS + OnDuty + daysinICU + TimeFCT + ASApreinjury + Survival, family = binomial, data = tablereg) 
 
 table3b <- tbl_regression(adjusted_table,
+                          exponentiate = TRUE, 
                           label = list(RTS = "Revised Trauma Score",
                                        daysinICU = "Days in the ICU",
                                        ASApreinjury = "ASA preinjury",
