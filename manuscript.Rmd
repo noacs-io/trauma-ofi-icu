@@ -506,19 +506,20 @@ procedures e.g. intubation have been carried out rapidly due to the
 patients being visibly ill from the beginning. The patients who are
 being missed and where certain procedures take longer time before being
 performed are the patients who seem stable upon arrival, but who later
-become worse --- the patients with higher RTS scores. In Albaaj's study
-respiratory rate \>29, systolic blood pressure 50-75 mmHg and 76-89
-mmHg, and Glasgow Coma Scale 9-12 were significantly related to
-increased odds of OFI in the unadjusted analysis, but not in the
+become worse --- the patients with comparatively higher RTS scores. In
+Albaaj's study respiratory rate \>29, systolic blood pressure 50-75 mmHg
+and 76-89 mmHg, and Glasgow Coma Scale 9-12 were significantly related
+to increased odds of OFI in the unadjusted analysis, but not in the
 adjusted analysis among patients from the Swedish Trauma Registry [@12].
 All of these variables equal medium to higher RTS values --- capturing
 the group of patients who's vital parameters are negatively affected by
-the trauma, but who are relatively stable in this group of patients.
-This creates a sense of false security, leading to increased time until
-necessary emergency procedures are performed.
+the trauma, but who are relatively stable in the group of trauma
+patients. This creates a sense of false security, leading to increased
+time until necessary emergency procedures are performed.
 
-#Se om det finns källa som pekar på vilken grupp av patienter som bör få
-mer fokus på IVA?
+A previous study on pediatric patients in South Africa showed that RTS
+was not predictive of mortality between high-risk and low-risk patients
+[@21]. This could indicate... .
 
 The variable ≤ 7 days in the ICU was significantly associated with
 decreasing odds of OFI in both the adjusted and unadjusted analyses.
@@ -532,8 +533,45 @@ patient passing away before any mistakes having been made due to the
 patient being very ill from the beginning --- the deaths were not
 preventable, but rather expected.
 
-#Leta efter artikel om att längre vårdtis på IVA ger sämre utfall och
-vad orsakerna är
+Previous studies have shown that prolonged ICU stay is a risk factor for
+increased mortality and morbidity in trauma patients [@22, @26].
+Something to consider is the reason for the lengthened stay in the ICU -
+studies have shown that patient characteristics on admission, like
+co-morbidities, age and severity of illness do not fully explain the
+increased long-term mortality. With lengthened stay in the ICU the
+reason for stay in the ICU become increasingly less associated with
+patient's original reason for admittance and increasingly associated
+with persistent chronic illness with associated organ dysfunction [@23,
+@24].
+
+This being the case, this might be an explanation for the lack of
+sigificance for ASA preinjury and ISS in the analysis. As stated above
+severity of illness do not fully explain increased long-term mortality.
+OFI may therefore not correlate fully with ASA preinjury and ISS
+respectively.
+
+However, a retrospective cohort has also shown that lower admission
+illness severity and younger age were associated with earlier discharge
+and therefore less associated with persistent critical illness, which
+would then indicate a stronger association between ISS and ASA preinjury
+to length of stay in the ICU as the patients who are in a better state
+leave the hospital earlier and there is less possibilities for OFI. On
+the other hand, the cohort also showed that lower comorbidity was
+associated with persistent critical illness rather than early discharge
+from the ICU --- supporting the opposite side of the argument [@25].
+
+Several studies have also studied the association between different
+factors which affect the length of stay in the ICU. Associations between
+hypoglycaemia, use of any corticosteroids, use of any neuromuscular
+agents, use of any benzodiazepines for more than 1 day, the need for
+mechanical ventilation for \> 2 days, initiation of new dialysis and the
+occurrence of new infection has been found with increased total and
+5-year mortality [@23]. An association between bleeding in patients and
+increased length of stay in the ICU [@27].
+
+KLADD: APACHE is a physiological score and works best on critically ill
+patients on a group level, but not as well on individual patients or on
+relatively healthier patients [@28]...
 
 Death within 30 days after hospitalization was associated with OFI in
 the unadjusted analysis but not in the adjusted analysis. Patients who
@@ -550,16 +588,33 @@ meaning that if a patient has a higher ASA-score before the trauma, that
 patient may not have the same reference point for OFI compared to a
 patient with low ASA-score before the trauma.
 
-#Lägga in artikel om hur IVA patienter behandlas baserat på kön eller
-ålder + artikel om hur ASA-poängen eller pat allvarlighetsgrad påverkar
-bedömningen av OFI
+There are many studies on gender in association to health care. It has
+previously been shown that there is no difference in willingness to
+admit to the ICU between cases describing a man or woman in the
+physician responses [@29]. However, studies also show that, among
+severely injured patients, female gender is associated with lower
+in-hospital mortality among those aged 16-44 years. Female gender is
+also associated with decreased likelihood for ICU admission [@30]. Male
+gender contributes more to poor outcomes in postoperative ICU patients,
+and two-thirds of ICU resources are consumed by male patients [@31].
+However, in our study we could not see any correlation between OFI and
+one specific gender.
+
+Preinjury ASA-PS score has been shown to be a reliable score for
+predicting mortality after trauma, predicting readmission after
+traumatic injury and for classifying comorbidity in trauma patients
+[@32, @33, @34]. But why is ASA preinjury not associated with OFI? Could
+it be because longer ICU stays are not associated with comorbidities to
+the same extent? ...
 
 The variable on duty was not significant in either analyses indicating
 that the time of arrival of the patients did not affect their medical
 treatment. Trying to reduce number of OFI can therefore not be solved by
-increasing medical resources outside working hours.
-
-#Lägga in artikel som pekar på om duty påverkar handläggning eller inte
+increasing medical resources outside working hours. On-call sleeping has
+been studied and it has been stated that sleeping between calls is
+beneficial for waking performance. However, there might be a temporary
+increase in performance impairment that should be taken into
+consideration [@35]...
 
 Something to consider is why ISS was not significant in the analyses.
 Patients admitted to the ICU are usually in a bad shape with generally
@@ -569,9 +624,21 @@ ISS on its own is that it has higher predictive value when combined with
 other parameters like vital signs, comorbidities and mechanism of
 injury.
 
-#Artikel om hur ISS bedöms kunna användas i samanhang av trauma
+ISS is an anatomical model, compared to RTS which is a physiological
+model. Among trauma patients admitted to the ICU the physiological
+models perform better than the anatomical models. However, patients with
+low scores in the physiological model also require an anatomic analysis
+of the injuries to determine their severity [@36]. NISS has been found
+to be better than ISS in predicting the ICU admission of trauma
+patients, as well as predicting prolonged ICU length of stay [@37]. This
+could be an explanation to why ISS is not significant in the results of
+this analysis, as RTS is a better model for patients admitted to the
+ICU.
 
-### Limitations
+### Strengths and limitations
+
+The strengths of this study was that it is a national registry-based
+study which means that the quality of the data is reliable...
 
 There were several limitations in our study: the selection for the
 morbidity and mortality review, the definition of the RTS variable and
@@ -579,12 +646,14 @@ the study size.
 
 The selection for review for the morbidity and mortality review relied
 mostly on the local audit filters used at the Karolinska Institute
-Hospital in Solna. This leads to a risk of misplacement where some
+Hospital in Solna as a base for choosing patient cases for the mortality
+and morbidity review. Using audit filters to select patients for the
+conference is associated with high false positive rates, from 24% to 80%
+[@38]. Even though the use of audit filters is associated with high
+false positive rates, there is still a risk of misplacement where some
 patients with OFI were not selected by for the review based on the audit
-filters although there was an OFI later on in the hospitalization
-process.
-
-#Lägga in källa för audit filters - Kelvins artikel (mejlar Jocke)
+filters although there was an OFI that occurred later on during the
+hospital stay.
 
 The definition of the RTS-value is a combination of GCS, SBP and RR.
 When the patients were intubated and had missing values for GCS or RR,
@@ -597,6 +666,9 @@ can also be seen as an advantage, being a combination of vital
 parameters. This would mean that the RTS value reflects the state of the
 patient better than these parameters separately.
 
+Another limitation is the combination of data from the emergency
+department and prehospital values when the previous one's were missing.
+
 The study was a single-centre study and illustrate the situation in the
 Karolinska Intitute Hospital in Solna. More research is needed on the
 area of OFI in patients admitted to the ICU. A suggestion would be to
@@ -608,6 +680,21 @@ separately instead of them as a combined RTS-score. A study including
 more patients could potentially show significance for the separate vital
 parameters leading to a better prediction model for which patients that
 should receive more focus when improving trauma care.
+
+Examples of limitations:
+
+-   Theoretical: limits the scope, depth, or applicability of a study.
+
+-   Methodological: limits the quality, quantity, or diversity of the
+    data.
+
+-   Empirical: limits the representativeness, validity, or reliability
+    of the data.
+
+-   Analytical: limits the accuracy, completeness, or significance of
+    the findings.
+
+-   Ethical: limits the access, consent, or confidentiality of the data.
 
 ### Generalisability
 
