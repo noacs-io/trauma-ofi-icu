@@ -11,6 +11,51 @@ editor_options:
 
 # Abstract
 
+## Bakgrund
+
+Trauma är en ledande orsak till mortalitet och morbiditet i världen. En
+hörnsten i utvecklingen av förbättringsprogram för trauma är
+multidisciplinära mortalitets- och morbiditetskonferenser. Syftet med
+dessa är att identifiera opportunities for improvement (OFI) som är en
+viktig del i det riktade förbättringsarbetet av traumahandläggning.
+Många patienter med svåra trauman blir inlagda på
+intensivvårdsavdelningen (IVA). Trots detta är kännedomen om
+förbättringsmöjligheter hos denna patientgrupp inte heltäckande i
+nuläget. Syftet med denna studie är att karaktärisera OFI hos vuxna
+traumapatienter som varit inlagda på IVA och bedöma hur patient- och
+processfaktorer är associerade med OFI hos denna patientgrupp.
+
+## Metod
+
+Detta är en registerbaserad studie som inkluderar traumapatienter från
+2014 till 2023 från Karolinska Universitetssjukhuset i Solna som har
+varit inlagda på IVA och som har granskats avseende förekomsten av OFI
+vid en mortalitets- och morbiditetskonferens. Bivariabel och
+multivariabel logistisk regression användes för att bedöma sambandet
+mellan följande patient- och processfaktorer samt OFI bland denna
+patientgrupp: kön, ålder, om patienten var intuberad eller ej och hur
+många dagar, Revised Trauma Score (RTS), Injury Severity Score (ISS),
+jourtid vid ankomst till sjukhuset, tid från ankomst till sjukhuset till
+första datortomografi (DT), dagar på IVA, ASA-värde före trauma och
+överlevnad efter 30 dagar.
+
+## Resultat
+
+OFI identifierades hos 143 av 1449 patienter. Högre Revised Trauma Score
+(RTS) var associerat med högre odds för OFI, ≤ 7 dagar på
+intensivvårdsavdelningen (IVA) var associerat med lägre odds för OFI och
+död inom 30 dagar efter sjukhusvistelse var associerat med högre odds
+för OFI med statistisk signifikans i den ojusterade analysen. Högre
+Revised Trauma Score (RTS) var associerat med högre odds för OFI, och ≤
+7 dagar på IVA var associerat med lägre odds för OFI med statistisk
+signifikans i den justerade analysen.
+
+## Slutsats
+
+De patient- och processfaktorer som var signifikant associerade med OFI
+visade att högre RTS var associerat med högre odds för OFI och att ≤ 7
+dagar på IVA var associerat med lägre odds för OFI.
+
 ## Background
 
 Trauma is a leading cause of mortality and morbidity worldwide. A
@@ -29,13 +74,13 @@ OFI in these patients.
 This was a registry-based study using all patients between 2014 and 2023
 from the Karolinska University Hospital in Solna who had been admitted
 to the ICU and who were reviewed regarding the presence of OFI by the
-mortality and morbidity conference. Bi-variable and multivariable
+mortality and morbidity conference. Bivariable and multivariable
 logistic regression was used to assess the following patient and process
 factors and OFI among this group of patients: gender, age, if the
 patient was intubated or not and how many days, Revised Trauma Score
-(RTS), Injury Severity Score (ISS), on call, time from arrival at the
-hospital until first computed tomography (CT), days in the ICU, ASA
-preinjury and survival after 30 days.
+(RTS), Injury Severity Score (ISS), arrival outside of working hours,
+time from arrival at the hospital until first computed tomography (CT),
+days in the ICU, ASA preinjury and survival after 30 days.
 
 ## Results
 
@@ -55,6 +100,10 @@ higher RTS was associated with higher odds of OFI, and ≤ 7 days in the
 ICU was associated with lower odds of OFI.
 
 # Abbreviations
+
+APACHE = Acute Physiology and Chronic Health Evaluation
+
+ASA score = American Society of Anesthesiologists score
 
 CT = computed tomography
 
@@ -119,19 +168,20 @@ radiological interventions such as embolisation and stents, and
 thoracotomy [@3].
 
 Albaaj et al. recently analyzed opportunities for improvement (OFI) in
-relation to different patient and process factors based on data from the
-Swedish trauma registry and data from the Karolinska University Hospital
-in Solna. The study indicated that patients with moderate to severe
-trauma are at the highest odds of OFI [@4]. According to SweTrau 2022
-41,1% of patients with New Injury Severity Score (NISS) \> 15 who were
-at a university hospital were admitted to the ICU. The proportion of
-severely injured admitted to the ICU has decreased in recent years,
-however; patients with NISS \> 15 still constitute a large proportion of
-the trauma patients treated in the ICU. A way to measure functional
-level after hospital discharge is Glasgow Outcome Scale (GOS). According
-to GOS, among patients with NISS \> 15 17% were deceased, 20% suffered
-severe disability, 49% suffered moderate disability and 14% had good
-recovery in the university hospitals of Sweden [@3].
+relation to different patient and process factors based on a selection
+of data from SweTrau including the patients admitted to the Karolinska
+University Hospital in Solna following trauma. The study indicated that
+patients with moderate to severe trauma are at the highest odds of OFI
+[@4]. According to SweTrau 2022 41,1% of patients with New Injury
+Severity Score (NISS) \> 15 who were at a university hospital were
+admitted to the ICU. The proportion of severely injured admitted to the
+ICU has decreased in recent years, however; patients with NISS \> 15
+still constitute a large proportion of the trauma patients treated in
+the ICU. A way to measure functional level after hospital discharge is
+Glasgow Outcome Scale (GOS). According to GOS, among patients with NISS
+\> 15 17% were deceased, 20% suffered severe disability, 49% suffered
+moderate disability and 14% had good recovery in the university
+hospitals of Sweden [@3].
 
 For all injuries, quality hospital care can reduce the amount of short-
 and long-term disability. Therefore, improving planning, access and
@@ -219,6 +269,28 @@ scores. The score determines the probability of survival based on a
 formula consisting of ISS, RTS and the patient's age. TRISS is therefore
 both an anatomical and physiological scoring system [@12].
 
+## Classifications systems for patient's general health
+
+Another way to assess the state of a patient in addition to the injury
+score systems are classification systems for patient's general health.
+Two of these are ASA score and APACHE II.
+
+American Society of Anesthesiologists (ASA) classification was
+originally created to establish a scoring system for evaluation of a
+patient's general health and comorbidities before an operative procedure
+[@39]. However, recent studies have also showed ASA class to be a
+significant predictor for length of stay, indicating that ASA score can
+be used as predictor in other aspects of hospital care as well [@40].
+
+Acute Physiology and Chronic Health Evaluation (APACHE) II is the most
+commonly used severity-of-disease scoring system in ICUs all around the
+world. The worst value for each physiological variabel is converted to
+an integer score from 0 to 71 within the first 24 hours of admittance.
+Higher score indicates more severe disease and higher risk for
+mortality. The score has not been validated for use on patient's under
+16 years of age. APACHE II has shown to be a good score for
+discriminating between survivors and non-survivors [@41].
+
 ## Preventable deaths in patients admitted to the ICU
 
 There are many studies on preventable deaths in trauma patients treated
@@ -278,13 +350,14 @@ from the Karolinska University Hospital in Solna and from the Swedish
 Trauma registry. We used R for all statistical analyses [@19].
 
 For patients where hospital values for systolic blood pressure,
-respiratory rate or GCS score were missing, prehospital values were used
-instead. If the patient was intubated we automatically assumed that GCS
-was equal to 3 and RR was equal to 0. For the RTS-variable, each of the
-variables GCS, SBP and RR were then converted to a RTS-code between 0
-and 4 based on what the values of GCS, SBP and RR were respectively. RTS
-was then calculated using the formula for RTS based on the combination
-of the RTS-codes assigned to each of the previously listed variables.
+respiratory rate or GCS score were missing from the emergency
+department, prehospital values were used instead. If the patient was
+intubated we automatically assumed that GCS was equal to 3 and RR was
+equal to 0. For the RTS-variable, each of the variables GCS, SBP and RR
+were then converted to a RTS-code between 0 and 4 based on what the
+values of GCS, SBP and RR were respectively. RTS was then calculated
+using the formula for RTS based on the combination of the RTS-codes
+assigned to each of the previously listed variables.
 
 A complete case analysis was conducted after handling missing values. We
 present sample characteristics using descriptive statistics.
@@ -321,25 +394,25 @@ arrival.
 
 ### Study outcome
 
-The study outcome will be on the presence of OFI in adult patients
-treated in the ICU based on patient and process factors.
+The study outcome is on the presence of OFI in adult patients treated in
+the ICU based on patient and process factors.
 
 ### Patient and process factors
 
-The quantitative variables were factors chosen from the trauma registry,
-based on the locally used audit filters, standard epidemiological
-factors and factors registered in the Swedish Trauma Registry. The
-categorical factors were sex, age, if the patient was intubated or not
-and how many days, Revised Trauma Score (RTS), Injury Severity Score
-(ISS), on call, time from arrival at the hospital until first computed
-tomography (CT), days in the ICU, ASA preinjury and survival after 30
-days. On duty was defined as before 8.00 a.m., after 5 p.m., or during a
-weekend - defined as Saturday or Sunday.
+The variables were factors chosen from the trauma registry, based on the
+locally used audit filters, standard epidemiological factors and factors
+registered in the Swedish Trauma registry. The categorical factors were
+sex, age, if the patient was intubated or not and how many days, Revised
+Trauma Score (RTS), Injury Severity Score (ISS), on call, time from
+arrival at the hospital until first computed tomography (CT), days in
+the ICU, ASA preinjury and survival after 30 days. On duty was defined
+as before 8.00 a.m., after 5 p.m., or during a weekend - defined as
+Saturday or Sunday.
 
 ## Study size
 
 There were 14,022 patients in the trauma registry between January 1 2013
-and February 28 2023. 2679 of these patients were admitted to the ICU. 3
+and February 1 2023. 2679 of these patients were admitted to the ICU. 3
 patients were then excluded as they were younger than 15 years and 6
 patients were excluded because they were dead on arrival. 928 patients
 were excluded because there was no registration on whether there was an
@@ -425,26 +498,6 @@ excluded
 excluded1
 ```
 
-## Descriptive data
-
-```{r include_scripts, include=FALSE}
-source("functions/table1.R")
-```
-
-```{r, echo=FALSE}
-table2
-```
-
-## Main results
-
-```{r, include=FALSE}
-source("functions/table2.R")
-```
-
-```{r, echo=FALSE}
-table3_merge
-```
-
 14,022 patients were included in the trauma registry and trauma care
 quality database between 2017 and 2023. 12,278 patients were excluded,
 leaving a total of 1,742 patients eligible for the study. 11,343 were
@@ -454,6 +507,16 @@ because they were dead on arrival, and 928 patients were excluded
 because there was no data on the presence or absence OFI. 293 patients
 were excluded because there was missing data, leaving a total of 1,449
 patients included in the study.
+
+## Descriptive data
+
+```{r include_scripts, include=FALSE}
+source("functions/table1.R")
+```
+
+```{r, echo=FALSE}
+table2
+```
 
 Table 1 present sample characteristics. 1,096 (76%) patients were male
 and 353 (24%) patients were female. 846 (58%) patients had no
@@ -466,6 +529,16 @@ more than 7 days in the ICU. 1,080 (75%) patients had an ASA-score of
 1-2 before arrival to the hospital, and 369 (25%) patients had an
 ASA-score of 3-7 before arrival to the hospital. 286 (20%) patients died
 within 30 days after hospitalization.
+
+## Main results
+
+```{r, include=FALSE}
+source("functions/table2.R")
+```
+
+```{r, echo=FALSE}
+table3_merge
+```
 
 Table 2 shows the unadjusted and adjusted associations of the selected
 patient and process factors in relation to OFI. In the unadjusted
@@ -487,21 +560,45 @@ associated with decreasing odds of OFI in both the unadjusted and
 adjusted analyses.
 
 Sex, Age, Intubation, ISS, time to first CT, on duty and ASA preinjury
-were not significantly associated with OFI in the unadjusted or the
+were not significantly associated with OFI in the unadjusted nor the
 adjusted analyses. Female sex, intubation \> 7 days, \> 7 days in the
 ICU, ASA preinjury 1-2 and survival 30 days after hospitalisation could
 not be analysed with logistic regression.
 
+```{r, include=FALSE}
+source("functions/table3.R")
+```
+
+```{r, echo=FALSE}
+table3alive_merge
+```
+
+Table 3 shows the unadjusted and adjusted associations of OFI and the
+selected patient and process factors among the patients who were alive
+30 days after hospitalization. In the unadjusted analysis time to first
+CT `r inline_text(table3aalive, variable = TimeFCT)` was significant.
+Indicating that it has no correlation with increasing or decreasing odds
+of OFI.
+
 # Discussion
 
-### Key results
+The key results from this study are that we found that higher RTS was
+associated with higher odds of OFI in both the adjusted and unadjusted
+analyses, ≤ 7 days in the ICU was associated with decreased risk of OFI
+in both the unadjusted and adjusted analyses, and death within 30 days
+after hospitalization was associated with OFI in the unadjusted, but not
+in the adjusted analysis. Age, gender, intubation, ISS, time to first
+CT, on duty and ASA preinjury were not significantly associated with OFI
+in neither the unadjusted or the adjusted analyses. In the subgroup
+analysis of patients who were alive 30 days after hospitalization time
+to first CT showed significance for having no relation to OFI.
 
 We found that higher RTS was associated with higher odds of OFI. RTS is
 a combined value of systolic blood pressure, Glasgow Coma Scale and
 respiratory rate with more weight towards GCS. An explanation for the
 increased odds of OFI in patients with increased RTS could be that the
 patients with low RTS values - with low GCS, RR and SBP also are the
-once that are in a bad state upon arrival --- upon which emergency
+ones that are in a bad state upon arrival --- upon which emergency
 procedures e.g. intubation have been carried out rapidly due to the
 patients being visibly ill from the beginning. The patients who are
 being missed and where certain procedures take longer time before being
@@ -510,16 +607,14 @@ become worse --- the patients with comparatively higher RTS scores. In
 Albaaj's study respiratory rate \>29, systolic blood pressure 50-75 mmHg
 and 76-89 mmHg, and Glasgow Coma Scale 9-12 were significantly related
 to increased odds of OFI in the unadjusted analysis, but not in the
-adjusted analysis among patients from the Swedish Trauma Registry [@12].
-All of these variables equal medium to higher RTS values --- capturing
-the group of patients who's vital parameters are negatively affected by
-the trauma, but who are relatively stable in the group of trauma
-patients. This creates a sense of false security, leading to increased
-time until necessary emergency procedures are performed.
-
-A previous study on pediatric patients in South Africa showed that RTS
-was not predictive of mortality between high-risk and low-risk patients
-[@21]. This could indicate... .
+adjusted analysis among patients from the part of the Swedish Trauma
+Registry covering patients from the Karolinska University Hospital in
+Solna [@12]. All of these variables equal medium to higher RTS values
+--- capturing the group of patients who's vital parameters are
+negatively affected by the trauma, but who are relatively stable in the
+group of trauma patients. This creates a sense of false security,
+leading to increased time until necessary emergency procedures are
+performed.
 
 The variable ≤ 7 days in the ICU was significantly associated with
 decreasing odds of OFI in both the adjusted and unadjusted analyses.
@@ -530,48 +625,44 @@ less time of recovery before leaving the hospital. Furthermore, a longer
 stay leads to more space for mistakes being made. The other aspect of
 the variable would be that few days in the ICU could indicate the
 patient passing away before any mistakes having been made due to the
-patient being very ill from the beginning --- the deaths were not
-preventable, but rather expected.
+patient being very ill from the beginning --- cases in which the deaths
+were not preventable, but rather expected.
 
 Previous studies have shown that prolonged ICU stay is a risk factor for
 increased mortality and morbidity in trauma patients [@22, @26].
-Something to consider is the reason for the lengthened stay in the ICU -
-studies have shown that patient characteristics on admission, like
-co-morbidities, age and severity of illness do not fully explain the
+Something to consider is the reason for the lengthened stay in the ICU.
+Studies have shown that patient characteristics on admission, like
+comorbidities, age and severity of illness do not fully explain the
 increased long-term mortality. With lengthened stay in the ICU the
 reason for stay in the ICU become increasingly less associated with
 patient's original reason for admittance and increasingly associated
 with persistent chronic illness with associated organ dysfunction [@23,
-@24].
-
-This being the case, this might be an explanation for the lack of
+@24]. This being the case, this might be an explanation for the lack of
 sigificance for ASA preinjury and ISS in the analysis. As stated above
-severity of illness do not fully explain increased long-term mortality.
-OFI may therefore not correlate fully with ASA preinjury and ISS
-respectively.
+severity of illness and comorbidities do not fully explain increased
+long-term mortality. OFI may therefore not correlate fully with ASA
+preinjury and ISS respectively which are factors describing
+comorbidities and the severity of illness.
 
-However, a retrospective cohort has also shown that lower admission
-illness severity and younger age were associated with earlier discharge
-and therefore less associated with persistent critical illness, which
-would then indicate a stronger association between ISS and ASA preinjury
-to length of stay in the ICU as the patients who are in a better state
-leave the hospital earlier and there is less possibilities for OFI. On
-the other hand, the cohort also showed that lower comorbidity was
-associated with persistent critical illness rather than early discharge
-from the ICU --- supporting the opposite side of the argument [@25].
+However, a retrospective cohort has shown that lower admission illness
+severity and younger age were associated with earlier discharge and
+therefore less associated with persistent critical illness, which would
+then indicate a stronger association between ISS and ASA preinjury to
+length of stay in the ICU as the patients who are in a better state
+leave the hospital earlier and there is less odds for OFI. On the other
+hand, the cohort also showed that lower comorbidity was associated with
+persistent critical illness rather than early discharge from the ICU ---
+supporting the opposite side of the argument [@25].
 
 Several studies have also studied the association between different
-factors which affect the length of stay in the ICU. Associations between
+factors that affect the length of stay in the ICU. Associations between
 hypoglycaemia, use of any corticosteroids, use of any neuromuscular
 agents, use of any benzodiazepines for more than 1 day, the need for
 mechanical ventilation for \> 2 days, initiation of new dialysis and the
-occurrence of new infection has been found with increased total and
-5-year mortality [@23]. An association between bleeding in patients and
-increased length of stay in the ICU [@27].
-
-KLADD: APACHE is a physiological score and works best on critically ill
-patients on a group level, but not as well on individual patients or on
-relatively healthier patients [@28]...
+occurrence of new infection has been found to have a correlation to
+increased total and 5-year mortality [@23]. An association between
+bleeding in patients and increased length of stay in the ICU has also
+been found [@27].
 
 Death within 30 days after hospitalization was associated with OFI in
 the unadjusted analysis but not in the adjusted analysis. Patients who
@@ -579,33 +670,40 @@ died within 30 days after hospitalization could either have suffered a
 severe trauma or have been in a poor state from the beginning; therefore
 increasing the odds of OFI.
 
-Sex, age and ASA preinjury were not significant in the unadjusted nor
-the adjusted analyses, which implicates that the patients were not
-treated differently based on age or gender. The results concerning the
-ASA preinjury could be due to the OFI considering if each patient really
-had an opportunity for improvement based on their individual cases,
-meaning that if a patient has a higher ASA-score before the trauma, that
-patient may not have the same reference point for OFI compared to a
-patient with low ASA-score before the trauma.
+Sex and age were not significant in the unadjusted nor the adjusted
+analyses, which implicates that the patients were not treated
+differently based on age or gender. There are many studies on gender in
+association to health care. It has previously been shown that there is
+no difference in willingness to admit to the ICU between cases
+describing a man or woman in the physician's responses [@29]. However,
+studies also show that, among severely injured patients, female gender
+is associated with lower in-hospital mortality among those aged 16-44
+years. Female gender is also associated with decreased likelihood for
+ICU admission [@30]. Male gender contributes more to poor outcomes in
+postoperative ICU patients, and two-thirds of ICU resources are consumed
+by male patients [@31]. However, in our study we could not see any
+correlation between OFI and one specific gender in the occurrence of
+OFI. Although we can also see that the majority of the patients included
+in this study were also males. There is possibly a reason for higher
+admittance of males to the ICU and association with poorer outcomes, but
+it has nothing to do with odds of OFI.
 
-There are many studies on gender in association to health care. It has
-previously been shown that there is no difference in willingness to
-admit to the ICU between cases describing a man or woman in the
-physician responses [@29]. However, studies also show that, among
-severely injured patients, female gender is associated with lower
-in-hospital mortality among those aged 16-44 years. Female gender is
-also associated with decreased likelihood for ICU admission [@30]. Male
-gender contributes more to poor outcomes in postoperative ICU patients,
-and two-thirds of ICU resources are consumed by male patients [@31].
-However, in our study we could not see any correlation between OFI and
-one specific gender.
-
-Preinjury ASA-PS score has been shown to be a reliable score for
+ASA preinjury was not significant in the unadjusted nor the adjusted
+analyses. Preinjury ASA score has been shown to be a reliable score for
 predicting mortality after trauma, predicting readmission after
 traumatic injury and for classifying comorbidity in trauma patients
-[@32, @33, @34]. But why is ASA preinjury not associated with OFI? Could
-it be because longer ICU stays are not associated with comorbidities to
-the same extent? ...
+[@32, @33, @34]. ASA score was originally developed to assess a
+patient's health before surgical procedures and therefore provided
+information on how much risk for postoperative complications there was.
+Studies have investigated if ASA score also is a good predictor in other
+aspects of medical care and as discussed above it is a predictor for
+mortality after trauma and for readmission. However, this does not
+automatically mean that there is an correlation between ASA score and
+OFI. Patient's with higher ASA scores might receive more attention when
+admitted to the ICU due to their comorbidities, but as the variable used
+in this study is ASA preinjury --- a measurement of the patient's health
+before the trauma --- this might not contribute to a fair picture of the
+current state of the patient, which injury scores like RTS might.
 
 The variable on duty was not significant in either analyses indicating
 that the time of arrival of the patients did not affect their medical
@@ -614,7 +712,7 @@ increasing medical resources outside working hours. On-call sleeping has
 been studied and it has been stated that sleeping between calls is
 beneficial for waking performance. However, there might be a temporary
 increase in performance impairment that should be taken into
-consideration [@35]...
+consideration [@35].
 
 Something to consider is why ISS was not significant in the analyses.
 Patients admitted to the ICU are usually in a bad shape with generally
@@ -622,79 +720,65 @@ high ISS. ISS is based on the square of the three highest AIS scores
 allocated to the three most severly injured body parts. The downside of
 ISS on its own is that it has higher predictive value when combined with
 other parameters like vital signs, comorbidities and mechanism of
-injury.
-
-ISS is an anatomical model, compared to RTS which is a physiological
-model. Among trauma patients admitted to the ICU the physiological
-models perform better than the anatomical models. However, patients with
-low scores in the physiological model also require an anatomic analysis
-of the injuries to determine their severity [@36]. NISS has been found
-to be better than ISS in predicting the ICU admission of trauma
-patients, as well as predicting prolonged ICU length of stay [@37]. This
-could be an explanation to why ISS is not significant in the results of
-this analysis, as RTS is a better model for patients admitted to the
-ICU.
+injury. ISS is an anatomical model, compared to RTS which is a
+physiological model. Among trauma patients admitted to the ICU the
+physiological models perform better than the anatomical models. However,
+patients with low scores in the physiological model also require an
+anatomic analysis of the injuries to determine their severity [@36].
+NISS has been found to be better than ISS in predicting the ICU
+admission of trauma patients, as well as for predicting prolonged ICU
+length of stay [@37]. This could be an explanation to why ISS is not
+significant in the results of this analysis, as RTS as well as NISS are
+potentially better models for patients admitted to the ICU.
 
 ### Strengths and limitations
 
-The strengths of this study was that it is a national registry-based
-study which means that the quality of the data is reliable...
+One of the strengths of this study is that it is a registry-based study
+which means that the quality of the data is reliable. The collection of
+the included variables were pre-defined which means the reporting of the
+included variables was standardized. Furthermore, the specific inclusion
+criteria of the study: including patients 15 years and older, who were
+not dead on arrival and who were admitted to the ICU, resulted in a
+specific and well-defined cohort. This contributes to the reliability
+and reproducibility of the study.
 
-There were several limitations in our study: the selection for the
-morbidity and mortality review, the definition of the RTS variable and
-the study size.
+There were several limitations to our study: the limited study size, the
+selection of patients for the morbidity and mortality review and the
+definition and use of the physiological variables of the study.
 
-The selection for review for the morbidity and mortality review relied
-mostly on the local audit filters used at the Karolinska Institute
-Hospital in Solna as a base for choosing patient cases for the mortality
-and morbidity review. Using audit filters to select patients for the
-conference is associated with high false positive rates, from 24% to 80%
-[@38]. Even though the use of audit filters is associated with high
-false positive rates, there is still a risk of misplacement where some
-patients with OFI were not selected by for the review based on the audit
-filters although there was an OFI that occurred later on during the
-hospital stay.
+Firstly, the study size was limited. This was a single-centre study and
+illustrate the situation at the Karolinska Intitute Hospital in Solna.
+Due to the small cohort of this study, it limits the applicability of
+this study to other level 1 trauma centers and ICUs. The small cohort
+might also affect the accuracy of the results.
 
-The definition of the RTS-value is a combination of GCS, SBP and RR.
-When the patients were intubated and had missing values for GCS or RR,
-we replaced it with RTS with a value of 0 for the equation for RTS, as
-GCS and respiratory rate are 0 when patients are intubated. This could
-affect the final results, because then we would not get their initial
-values for these variables, meaning some patients received a RTS score
-more weighted towards SBP than they should have. However, the use of RTS
-can also be seen as an advantage, being a combination of vital
-parameters. This would mean that the RTS value reflects the state of the
-patient better than these parameters separately.
+Secondly, the selection of patients for the morbidity and mortality
+review relied mostly on the local audit filters used at the Karolinska
+Institute Hospital in Solna. Using audit filters to select patients for
+the conference is associated with high false positive rates, ranging
+from 24% to 80% [@38]. Even though the use of audit filters is
+associated with high false positive rates, there is still a risk of
+misplacement where some patients with OFI were not selected by for the
+review based on the audit filters although there was an OFI that
+occurred later on during the hospital stay.
 
-Another limitation is the combination of data from the emergency
-department and prehospital values when the previous one's were missing.
-
-The study was a single-centre study and illustrate the situation in the
-Karolinska Intitute Hospital in Solna. More research is needed on the
-area of OFI in patients admitted to the ICU. A suggestion would be to
-conduct a multi-centre study on this group of patients to further
-investigate areas for improvement and to further develop trauma quality
-programs. Based on the results from this study, variables of interest
-could be number of days in the ICU and investigation of GCS, RR and SBP
-separately instead of them as a combined RTS-score. A study including
-more patients could potentially show significance for the separate vital
-parameters leading to a better prediction model for which patients that
-should receive more focus when improving trauma care.
-
-Examples of limitations:
-
--   Theoretical: limits the scope, depth, or applicability of a study.
-
--   Methodological: limits the quality, quantity, or diversity of the
-    data.
-
--   Empirical: limits the representativeness, validity, or reliability
-    of the data.
-
--   Analytical: limits the accuracy, completeness, or significance of
-    the findings.
-
--   Ethical: limits the access, consent, or confidentiality of the data.
+The definition of the RTS-value is a combination of GCS, SBP and RR. The
+variables used were the values from the emergency department. When these
+were missing, the prehospital values were used. If these were also
+missing, but there was documentation indicating that the patients had
+been intubated, we replaced GCS and RR with a value of 0. This is
+motivated for due to patients not breathing or being conscious when
+intubated. The acquired values were then combined to calculate a value
+for RTS. If the patient had missing values for either one of GCS, SBP or
+RR they were excluded from the study. The handling of these variables
+and their combination to RTS could affect the result as the values used
+are from either prehospital values, emergency department values or from
+identification of intubation. This could potentially affect the accuracy
+of the data and decrease the possibility for reproducibility. However,
+one could also argue that as the RTS value is a combined score of 3
+physiological variables the combination of them decreases the overall
+inaccuracy and produces a satisfactory measurement of the physiological
+state of the patient.
 
 ### Generalisability
 
@@ -702,16 +786,55 @@ The study is conducted on 143 outcomes of OFI. There were few outcomes
 because we included only those who were admitted to the ICU, \> 14 years
 old, not dead on arrival and had a registration for the presence or
 absence of OFI. The external validity is therefore compromised due to
-the limited size of the Swedish trauma database of patients admitted to
-the ICU.
+the limited size of the study. The internal validity is however high
+thanks to the well-defined cohort specifying trauma patients admitted to
+the ICU at the Karolinska University Hospital in Solna. The results from
+this study is therefore highly relevant for understanding where further
+efforts for trauma improvement should be directed among ICU trauma
+patients at this hospital.
+
+### Implications
+
+The potential clinical implication for this study is to further
+contribute to the development of improved trauma care. Identifying the
+group of patients admitted to the ICU is another step in the direction
+of identifying the patient's who would benefit the most from further
+improvements in trauma care. Trauma has a great global impact and this
+study amongst others on the subject all contribute to the more specified
+efforts in trauma quality improvement systems. Additionally, this study
+has offered further insights to the patient profile of the trauma center
+at Karolinska University Hospital in Solna admitted to the ICU.
+
+### Future studies
+
+More research is needed on the area of OFI in patients admitted to the
+ICU. The most relevant limitation of this study was the limited study
+size. A suggestion would be to conduct a multi-centre study, covering
+larger databases or combining several databases, on this group of
+patients to further investigate areas for improvement and to further
+contribute to the improvement of trauma quality programs.
+
+Based on the results from this study, variables of interest for future
+studies could be number of days in the ICU and investigation of GCS, RR
+and SBP separately instead of them as a combined RTS-score. It would be
+interesting to see if one of the vital parameters is better for
+predicting OFI than the others in a larger cohort.
 
 Based on the statistical significance for higher RTS being associated
-with higher odds of OFI, there should be more focus on trauma patients
-who are stable upon arrival who have a risk of becoming worse. Future
-studies should investigate what factors to use to see the indication for
-such a focus. Focusing on patients who are stable upon arrival overall
-is very extensive. Therefore, identifying such factors would be
-valuable.
+with higher odds of OFI, efforts should be more focused towards trauma
+patients who are relatively stable upon arrival, but who have a risk of
+getting worse. Future studies should investigate what factors that could
+potentially indicate eventual worsening of the state of the patient.
+Focusing on patients who are stable upon arrival overall is very
+extensive, which further emphasizes the importance of identifying such
+variables.
+
+ASA preinjury did not show any correlation with OFI in this study.
+However, it would be interesting to further investigate the correlation
+between ASA preinjury or another scoring system of the patient's general
+health before admittance to the hospital, and a combined physiological
+and anatomical injury scoring system to see if they predict OFI better
+combined than separately.
 
 # Conclusion
 
@@ -724,6 +847,23 @@ focus than they do now. The logistical regression also showed that ≤ 7
 days in the ICU was associated with decreased odds of OFI indicating
 that patients who are at the hospital less days in the ICU compared to
 more days in the ICU are less prone to opportunities for improvement.
+
+# Contributions
+
+This study has been conducted by Elin Sun Cao with continuous guidance
+and feedback provided by Martin Gerdin Wärnberg, Jonatan Attergrim and
+Kelvin Szolnoky.
+
+# Acknowledgements
+
+I want to extend my greatest gratitude to my supervisor Martin Gerdin
+Wärnberg and co-supervisors Jonatan Attergrim and Kelvin Szolnoky who
+have provided me with guidance and support throughout this semester.
+Their extensive knowledge, deep insight into the subject and
+availability and support has greatly contributed to the development of
+this project. Additionally, I want to express my gratitude to my friends
+and family who have been there contributing with encouragement and
+positive energy.
 
 # References
 
