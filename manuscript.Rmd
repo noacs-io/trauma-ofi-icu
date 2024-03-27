@@ -1,6 +1,6 @@
 ---
 title: "Opportunities for improvement in adult trauma patients admitted to the intensive care unit: A registry-based study"
-output: "html_document"
+output: "word_document"
 author: "Elin Sun Cao"
 bibliography: bibliography.bib
 csl: vancouver.csl
